@@ -354,13 +354,13 @@
     function querySubjectDataverseDataset(elm) {
         var dvArray = [];
         var fullArray = [];
-        $.get(metricBaseUrl + "dataverses/bySubject", function(jData) {
+        $.ajax({url: metricBaseUrl + "dataverses/bySubject", headers: { "Accept": "application/json" }, success: function(jData) {
             jData.data.forEach(function(item) {
                 if(item.subject !== "N/A" && item.subject !== "Other") {
                     dvArray.push([item.subject, item.count]);
                 }
             });
-            $.get(metricBaseUrl + "datasets/bySubject?dataLocation=all", function(jData) {
+            $.ajax({url: metricBaseUrl + "datasets/bySubject?dataLocation=all", headers: { "Accept": "application/json" }, success: function(jData) {
                 var resultHtml = "";
                 jData.data.forEach(function(item) {
                     if(item.subject !== "N/A" && item.subject !== "Other") {
@@ -380,8 +380,8 @@
                     resultHtml += "<p class=\"browse-subjects\"><a href=\"/dataverse/harvard?q=&fq0=subject_ss%3A%22" + subject[0] + "%22&types=dataverses%3Adatasets&sort=dateSort&order=desc\">" + subject[0] + "</a> <span class=\"text-muted\">" + subject[1] + "</span></p>";
                 });
                 document.getElementById(elm).innerHTML = resultHtml;
-            });
-        });
+            }});
+        }});
     }
 
     // queryMetricSimple("datasets", "?dataLocation=all", ["headAllTimeAllDatasetsValue", "activityAllTimeAllDatasetsValue"]);
