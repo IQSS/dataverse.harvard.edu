@@ -2,7 +2,7 @@ Code added to check on the status of the API calls that create the dataset and u
 
 The goal is to make sure we don't attempt to send any further requests while the last request is still being processed. This mostly concerns the reindexing of the dataset that happens in the background after both the initial create, and the upload calls. I.e., even after the call to the upload API returns "OK", that indexing may still be happening in the background. So we use the `/datasets/:persistentId/timestamps?persistentId={1}` API to check on the timestamps associated with the Datasets. If either `hasStaleIndex` or `hasStalePermissionIndex` fields in the output is `True`, that means the dataset is still being indexed, so we sleep for 10 sec., then try again, etc. until it's done. (While it shouldn't be necessary to be this careful when creating small numbers of datasets, this can potentially become a problem when this process is repeated hundreds+ times, if these calls start stacking up).
 
-All the added code in example.ipynb is in under "create dataset and add file" (cell 9). All the other cells in this example are the same as in the original Levy notebook.
+All the added code in example.ipynb is under "create dataset and add file" (cell 9). All the other cells in this example are the same as in the original Levy notebook.
 
 The most important piece of code is the following block (executed twice, after the create and upload steps) where we check on the indexing status:
 
