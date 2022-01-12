@@ -4,7 +4,7 @@ The goal is to make sure we don't attempt to send any further requests while the
 
 All the added code in example.ipynb is in under "create dataset and add file" (cell 9). All the other cells in this example are the same as in the original Levy notebook.
 
-The most important code is the following block where we check on the indexing status:
+The most important piece of code is the following block (executed twice, after the create and upload steps) where we check on the indexing status:
 
 ```
 # check if indexing is still chugging along:
@@ -25,5 +25,5 @@ while has_stale_index or has_stale_perm_index:
 ```
 
 (the above block can be easily reused whenever you modify a dataset and want to ensure that Dataverse is done indexing it).
-
+Some diagnostic is also added to print clear error messages when a dataset fails to be created, or a file fails to upload (instead of exiting with an exception or failing quietly). 
 
