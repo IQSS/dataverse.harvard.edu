@@ -1,0 +1,37 @@
+#metadataBlock	name	dataverseAlias	displayName													
+	custom3d	bc	3D Objects Metadata													
+#datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	3d3DTechnique	3D Technique	The technique used for capturing the 3D data		text	0	#VALUE	TRUE	TRUE	FALSE	TRUE	FALSE	FALSE		custom3d	
+	3dEquipment	Equipment	The equipment used for capturing the 3D data		text	1	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE		custom3d	
+	3dLightingSetup	Lighting Setup	The lighting used while capturing the 3D data		text	2	#VALUE	TRUE	TRUE	FALSE	TRUE	FALSE	FALSE		custom3d	
+	3dMasterFilePolygonCount	Master File Polygon Count	The high-resolution polygon count		text	3	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE		custom3d	
+	3dExportedFilePolygonCount	Exported File Polygon Count	The exported mesh polygon count		text	4	#VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		custom3d	
+	3dAltText	Alt-Text	A physical description of the object modeled		textbox	5	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		custom3d	
+	3dMaterialComposition	Material Composition	The material used to create the object, e.g. stone		text	6	#VALUE	TRUE	TRUE	FALSE	TRUE	FALSE	FALSE		custom3d	
+	3dObjectDimensions	Object Dimensions	The general measurements of the physical object		none	7	;	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		custom3d	
+	3dLength	Length	The rough length of the object		text	8	Length: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	3dObjectDimensions	custom3d	
+	3dWidth	Width	The rough width of the object		text	9	Width: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	3dObjectDimensions	custom3d	
+	3dHeight	Height	The rough height of the object		text	10	Height: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	3dObjectDimensions	custom3d	
+	3dUnit	Unit	The unit of measurement used for the object dimensions		text	11	Unit: #VALUE	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE	3dObjectDimensions	custom3d	
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	3d3DTechnique	Photogrammetry		0												
+	3d3DTechnique	LiDAR 		1												
+	3d3DTechnique	Other		2												
+	3dLightingSetup	Natural Light		0												
+	3dLightingSetup	Lightbox		1												
+	3dLightingSetup	LED		2												
+	3dLightingSetup	Fluorescent		3												
+	3dLightingSetup	Other		4												
+	3dMaterialComposition	Wood		0												
+	3dMaterialComposition	Stone		1												
+	3dMaterialComposition	Metal		2												
+	3dMaterialComposition	Plastic		3												
+	3dMaterialComposition	Ceramic		4												
+	3dMaterialComposition	Glass		5												
+	3dMaterialComposition	Textile		6												
+	3dMaterialComposition	Mixed Media		7												
+	3dMaterialComposition	Other		8												
+	3dUnit	cm		0												
+	3dUnit	m		1												
+	3dUnit	in		2												
+	3dUnit	ft		3												
