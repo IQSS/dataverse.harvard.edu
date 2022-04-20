@@ -15,7 +15,7 @@
 	3dUnit	Unit	The unit of measurement used for the object dimensions		text	11	Unit: #VALUE	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE	3dObjectDimensions	custom3d	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	3d3DTechnique	Photogrammetry		0												
-	3d3DTechnique	LiDAR 		1												
+	3d3DTechnique	LiDAR		1												
 	3d3DTechnique	Other		2												
 	3dLightingSetup	Natural Light		0												
 	3dLightingSetup	Lightbox		1												
