@@ -7,7 +7,7 @@
 	3dMasterFilePolygonCount	Master File Polygon Count	The high-resolution polygon count		text	3	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE		custom3d	
 	3dExportedFilePolygonCount	Exported File Polygon Count	The exported mesh polygon count		text	4	#VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		custom3d	
 	3dAltText	Alt-Text	A physical description of the object modeled		textbox	5	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		custom3d	
-	3dMaterialComposition	Material Composition	The material used to create the object, e.g. stone		text	6	#VALUE	TRUE	TRUE	FALSE	TRUE	FALSE	FALSE		custom3d	
+	3dMaterialComposition	Material Composition	The material used to create the object, e.g. stone		text	6	#VALUE	TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		custom3d	
 	3dObjectDimensions	Object Dimensions	The general measurements of the physical object		none	7	;	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		custom3d	
 	3dLength	Length	The rough length of the object		text	8	Length: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	3dObjectDimensions	custom3d	
 	3dWidth	Width	The rough width of the object		text	9	Width: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	3dObjectDimensions	custom3d	
