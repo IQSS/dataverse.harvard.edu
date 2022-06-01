@@ -1,50 +1,50 @@
-#metadataBlock	name	dataverseAlias	displayName	blockURI												
-	customNRD	NegotiationDataRepository	Negotiation Data Repository Metadata													
-#datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
-	nrdDataType	Data Type (Check all that apply)	The type of data included in the dataset's files		text	0	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		customNRD	
-	nrdOtherDataType	Other Data Type	Another type of data included in the dataset's files		text	1	#VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		customNRD	
-	nrdSourceOfDataParticipants	Source of Data/Participants	The source of the data/participants (e.g. students, practitioners, representative sampling from population)		text	2	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNRD	
-	nrdNegotiationContext	Negotiation Context (Check all that apply)	The context in which the data was collected		text	3	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		customNRD	
-	nrdOtherNegotiationContext	Other Negotiation Context	Another context in which the data was collected		text	4	#VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		customNRD	
-	nrdStudyProtocol	Protocol	The general protocol of the study (e.g. negotiation simulation, real negotiations in the field, survey about past negotiations or hypothetical scenarios)		textbox	5	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customNRD	
-	nrdStudyDesignSampleSize	Sample Size	The number of individual people from whom data was collected		text	6	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNRD	
-	nrdStudyDesignRandomization	Randomization	Randomization in the study design (e.g. to different conditions, roles)		textbox	7	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customNRD	
-	nrdStudyDesignOutcomes	Outcomes	Primary measures collected in the study (e.g. final deal agreements, bonuses awarded, subjective satisfcation, impression of partner, behavioral intentions)		textbox	8	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customNRD	
-	nrdIRBApproval	I confirm that I have IRB approval to share these data for academic purposes	Whether or not there's IRB approval to share these data for academic purposes		text	9	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNRD	
-	nrdNoPIIConfirmation	I confirm that these data do not contain any direct personal identifiers	Whether or not these data contain any direct personal identifiers		text	10	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNRD	
-	nrdConsentConfirmation	I confirm that all people in this dataset have given informed consent	Whether or not all people in this dataset have given informed consent		text	11	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNRD	
-	nrdVariableConfirmation	I confirm that I am including a data dictionary/survey legend explaining the variables in my dataset	Whether or not a data dictionary or survey legend has been created to explain the variables in the dataset		text	12	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNRD	
-#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
-	nrdDataType	Lab survey and simulation data		0												
-	nrdDataType	Field survey data		1												
-	nrdDataType	Transcripts		2												
-	nrdDataType	Negotiated agreements		3												
-	nrdDataType	Other (please specify in Other Data Type)		4												
-	nrdSourceOfDataParticipants	Student sample, in class		0												
-	nrdSourceOfDataParticipants	Student sample, outside of class		1												
-	nrdSourceOfDataParticipants	Practitioners		2												
-	nrdSourceOfDataParticipants	Snowball or other emergent engagement		3												
-	nrdSourceOfDataParticipants	Representative sampling from population		4												
-	nrdSourceOfDataParticipants	Convenience sample (e.g. mechanical turk, prolific)		5												
-	nrdNegotiationContext	Business/commercial		0												
-	nrdNegotiationContext	Non-profit		1												
-	nrdNegotiationContext	Government		2												
-	nrdNegotiationContext	Community		3												
-	nrdNegotiationContext	Law		4												
-	nrdNegotiationContext	International relations		5												
-	nrdNegotiationContext	Environment		6												
-	nrdNegotiationContext	Other (please specify)		7												
-	nrdStudyDesignSampleSize	0-50		0												
-	nrdStudyDesignSampleSize	51-100		1												
-	nrdStudyDesignSampleSize	101-250		2												
-	nrdStudyDesignSampleSize	251-500		3												
-	nrdStudyDesignSampleSize	501-1000		4												
-	nrdStudyDesignSampleSize	Over 1000		5												
-	nrdIRBApproval	Yes		0												
-	nrdIRBApproval	No		1												
-	nrdNoPIIConfirmation	Yes		0												
-	nrdNoPIIConfirmation	No		1												
-	nrdConsentConfirmation	Yes		0												
-	nrdConsentConfirmation	No		1												
-	nrdVariableConfirmation	Yes		0												
-	nrdVariableConfirmation	No		1												
+#metadataBlock	name	dataverseAlias	displayName	blockURI											
+	customNDR	NegotiationDataRepository	Negotiation Data Repository Metadata												
+#datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
+	nrdDataType	Data Type (Check all that apply)	The type of data included in the dataset's files		text	0	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		customNDR
+	nrdOtherDataType	Other Data Type	Another type of data included in the dataset's files		text	1	#VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		customNDR
+	nrdSourceOfDataParticipants	Source of Data/Participants	The source of the data/participants (e.g. students, practitioners, representative sampling from population)		text	2	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNDR
+	nrdNegotiationContext	Negotiation Context (Check all that apply)	The context in which the data was collected		text	3	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		customNDR
+	nrdOtherNegotiationContext	Other Negotiation Context	Another context in which the data was collected		text	4	#VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		customNDR
+	nrdStudyProtocol	Protocol	The general protocol of the study (e.g. negotiation simulation, real negotiations in the field, survey about past negotiations or hypothetical scenarios)		textbox	5	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customNDR
+	nrdStudyDesignSampleSize	Sample Size	The number of individual people from whom data was collected		text	6	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNDR
+	nrdStudyDesignRandomization	Randomization	Randomization in the study design (e.g. to different conditions, roles)		textbox	7	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customNDR
+	nrdStudyDesignOutcomes	Outcomes	Primary measures collected in the study (e.g. final deal agreements, bonuses awarded, subjective satisfcation, impression of partner, behavioral intentions)		textbox	8	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customNDR
+	nrdIRBApproval	I confirm that I have IRB approval to share these data for academic purposes	Whether or not there's IRB approval to share these data for academic purposes		text	9	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNDR
+	nrdNoPIIConfirmation	I confirm that these data do not contain any direct personal identifiers	Whether or not these data contain any direct personal identifiers		text	10	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNDR
+	nrdConsentConfirmation	I confirm that all people in this dataset have given informed consent	Whether or not all people in this dataset have given informed consent		text	11	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNDR
+	nrdVariableConfirmation	I confirm that I am including a data dictionary/survey legend explaining the variables in my dataset	Whether or not a data dictionary or survey legend has been created to explain the variables in the dataset		text	12	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNDR
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder											
+	nrdDataType	Lab survey and simulation data		0											
+	nrdDataType	Field survey data		1											
+	nrdDataType	Transcripts		2											
+	nrdDataType	Negotiated agreements		3											
+	nrdDataType	Other (please specify in Other Data Type)		4											
+	nrdSourceOfDataParticipants	Student sample, in class		0											
+	nrdSourceOfDataParticipants	Student sample, outside of class		1											
+	nrdSourceOfDataParticipants	Practitioners		2											
+	nrdSourceOfDataParticipants	Snowball or other emergent engagement		3											
+	nrdSourceOfDataParticipants	Representative sampling from population		4											
+	nrdSourceOfDataParticipants	Convenience sample (e.g. mechanical turk, prolific)		5											
+	nrdNegotiationContext	Business/commercial		0											
+	nrdNegotiationContext	Non-profit		1											
+	nrdNegotiationContext	Government		2											
+	nrdNegotiationContext	Community		3											
+	nrdNegotiationContext	Law		4											
+	nrdNegotiationContext	International relations		5											
+	nrdNegotiationContext	Environment		6											
+	nrdNegotiationContext	Other (please specify)		7											
+	nrdStudyDesignSampleSize	0-50		0											
+	nrdStudyDesignSampleSize	51-100		1											
+	nrdStudyDesignSampleSize	101-250		2											
+	nrdStudyDesignSampleSize	251-500		3											
+	nrdStudyDesignSampleSize	501-1000		4											
+	nrdStudyDesignSampleSize	Over 1000		5											
+	nrdIRBApproval	Yes		0											
+	nrdIRBApproval	No		1											
+	nrdNoPIIConfirmation	Yes		0											
+	nrdNoPIIConfirmation	No		1											
+	nrdConsentConfirmation	Yes		0											
+	nrdConsentConfirmation	No		1											
+	nrdVariableConfirmation	Yes		0											
+	nrdVariableConfirmation	No		1											
