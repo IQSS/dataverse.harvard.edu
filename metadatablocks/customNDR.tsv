@@ -9,7 +9,7 @@
 	nrdStudyProtocol	Protocol	The general protocol of the study (e.g. negotiation simulation, real negotiations in the field, survey about past negotiations or hypothetical scenarios)		textbox	5	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customNDR
 	nrdStudyDesignSampleSize	Sample Size	The number of individual people from whom data was collected		text	6	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNDR
 	nrdStudyDesignRandomization	Randomization	Randomization in the study design (e.g. to different conditions, roles)		textbox	7	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customNDR
-	nrdStudyDesignOutcomes	Outcomes	Primary measures collected in the study (e.g. final deal agreements, bonuses awarded, subjective satisfcation, impression of partner, behavioral intentions)		textbox	8	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customNDR
+	nrdStudyDesignOutcomes	Outcomes	Primary measures collected in the study (e.g. final deal agreements, bonuses awarded, subjective satisfaction, impression of partner, behavioral intentions)		textbox	8	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customNDR
 	nrdIRBApproval	I confirm that I have IRB approval to share these data for academic purposes	Whether or not there's IRB approval to share these data for academic purposes		text	9	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNDR
 	nrdNoPIIConfirmation	I confirm that these data do not contain any direct personal identifiers	Whether or not these data contain any direct personal identifiers		text	10	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNDR
 	nrdConsentConfirmation	I confirm that all people in this dataset have given informed consent	Whether or not all people in this dataset have given informed consent		text	11	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customNDR
