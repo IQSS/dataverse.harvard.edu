@@ -1,0 +1,24 @@
+The message below was sent in response to an RT request where a remote
+user was specifically asking about being able to use SFTP to upload
+files to Dataverse. This part can be skipped and the message should be
+further modified as needed. (once again, this is just a template).
+
+=====
+
+We don't support SFTP, sorry. We do support something called "direct
+upload" - in that mode the files are not uploaded to/streamed through
+the Dataverse application. Instead your browser interacts with
+Dataverse only to get an upload authorization, and then uploads the
+file directly to the S3 storage volume on the cloud. This generally
+works more reliably for larger files.
+
+The drawback of this method is, because Dataverse is not involved and
+doesn't receive the file, there is no automatic unzipping - the files
+need to be uploaded separately, and your local folder structure is NOT
+going to be preserved. There is however a command line client
+available - DVUploader, developed by a 3rd party, that can upload all
+the files from a folder/folders, recursively, while preserving the
+folder names. If you are comfortable using command line tools, I can
+send you more info and instructions.
+
+=====
