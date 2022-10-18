@@ -16,8 +16,8 @@ import hashlib
 def direct_upload(dataverse_url, dataset_pid, key, filename, path, mime_type, retries=10):
     data_id = None
     # start with a call to Dataverse to obtain a "ticket" for the upload to S3:
-    #file_path = path + "/" + filename
-    file_size = os.stat(filename).st_size
+    file_path = path + "/" + filename
+    file_size = os.stat(file_path).st_size
     while retries > 0:
         url_string = dataverse_url + "/api/datasets/:persistentId/uploadurls"
         url_string = url_string + "?persistentId=" + dataset_pid + "&key=" + key + "&size=" + str(file_size)
@@ -44,14 +44,14 @@ def direct_upload(dataverse_url, dataset_pid, key, filename, path, mime_type, re
                     # will attempt to make a Put request to upload the file to the bucket:
                     #print("upload url: "+upload_url)
                     #print("storage identifier: "+storage_identifier)
-                    files = {'upload_file': open(filename,'rb')}
+                    files = {'upload_file': open(file_path,'rb')}
                     upload_response = requests.put(upload_url, files=files, headers={'x-amz-tagging': 'dv-state=temp'},)
 
                     if upload_response.status_code == 200:
                         # Calculate MD5:
                         # (this is inefficient - we are going to read the file the second time
                         # but it should work for reasonable-sized files)
-                        with open(filename, "rb") as f:
+                        with open(file_path, "rb") as f:
                             file_hash = hashlib.md5()
                             while chunk := f.read(8192):
                                 file_hash.update(chunk)
@@ -137,8 +137,8 @@ def finalize_direct_upload(dataverse_url, dataset_pid, json_data, key):
 def main():
     # hard-coded server info (for now; these need to be passed as command line params, of course)
     dataverse_url = "http://localhost:8080"
-    dataset_pid = "doi:10.70122/FK2/DQPOQN"
-    api_key = "98e02735-8793-45f7-b47d-cd6d4ad1abe0"
+    dataset_pid = "doi:10.70122/FK2/XXXXX"
+    api_key = "yyyyy"
     # Note the hard-coded mime type, this will be used for every file;
     # in real life real mime types will have to be specified for every file, of course. 
     mime_type = "text/plain"
@@ -163,11 +163,10 @@ def main():
         
     json_data_array = []
 
-    os.chdir(path)
     # iterate through the files in the directory:
     file_num = 1
-    for filename in os.listdir():
-        if os.path.isfile(filename):
+    for filename in os.listdir(path):
+        if os.path.isfile(path+"/"+filename):
             print("attempting to upload file: "+filename)
             upload_result = direct_upload(dataverse_url, dataset_pid, api_key, filename, path, mime_type, 5)
     
