@@ -15,9 +15,13 @@ import hashlib
 # This way there's only one update, one reindexing etc. 
 def direct_upload(dataverse_url, dataset_pid, key, filename, path, mime_type, retries=10):
     data_id = None
+    if path is not None:
+        file_path = path + "/" + filename
+    else:
+        file_path = filename
+    
+    file_size = os.stat(file_path).st_size 
     # start with a call to Dataverse to obtain a "ticket" for the upload to S3:
-    file_path = path + "/" + filename
-    file_size = os.stat(file_path).st_size
     while retries > 0:
         url_string = dataverse_url + "/api/datasets/:persistentId/uploadurls"
         url_string = url_string + "?persistentId=" + dataset_pid + "&key=" + key + "&size=" + str(file_size)
@@ -42,10 +46,10 @@ def direct_upload(dataverse_url, dataset_pid, key, filename, path, mime_type, re
 
                 if upload_url is not None and storage_identifier is not None:
                     # will attempt to make a Put request to upload the file to the bucket:
-                    #print("upload url: "+upload_url)
+                    print("upload url: "+upload_url)
                     #print("storage identifier: "+storage_identifier)
-                    files = {'upload_file': open(file_path,'rb')}
-                    upload_response = requests.put(upload_url, files=files, headers={'x-amz-tagging': 'dv-state=temp'},)
+                    #files = {'upload_file': open(file_path,'rb')}
+                    upload_response = requests.put(upload_url, data=open(file_path, 'rb'), headers={'x-amz-tagging': 'dv-state=temp'},)
 
                     if upload_response.status_code == 200:
                         # Calculate MD5:
