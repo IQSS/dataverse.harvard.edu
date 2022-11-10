@@ -1,4 +1,9 @@
-When we configure a collection (or individual datasets) to use an S3 store with increased file size limits and direct upload, but they are still having problems uploading large files via the UI (the common symptom, the uploads just never complete; something must be timing out, somewhere), first suggest to them the DVUploader, as an alternative that's known to be more reliable:
+When we configure a collection (or individual datasets) to use an S3
+store with increased file size limits and direct upload, but they are
+still having problems uploading large files via the UI (the common
+symptom, the uploads just never complete; something must be timing
+out, somewhere), first suggest to them the DVUploader, as an
+alternative that's known to be more reliable:
 
 =====
 
@@ -22,25 +27,35 @@ required.
 =====
 
 Hello,
-DVUploader has been developed one of our collaborators outside Harvard. It can be obtained here: https://github.com/GlobalDataverseCommunityConsortium/dataverse-uploader
+DVUploader has been developed one of our collaborators outside
+Harvard. It can be obtained here:
+https://github.com/GlobalDataverseCommunityConsortium/dataverse-uploader
 Please make sure to use it with the -directupload option.
 Your command line will be something like
 
 java -jar DVUploader-v1.0.9.jar -directupload -key=YOUR_API_TOKEN -did=doi:10.7910/DVN/XXXXX -server=https://dataverse.harvard.edu YOUR_FILE_NAME
 
-Note the "YOUR_API_TOKEN" parameter. Have you used any of our APIs that require an API token? if not, go to "API Token" under your Dataverse user name at the top of the page to generate it.
+Note the "YOUR_API_TOKEN" parameter. Have you used any of our APIs
+that require an API token? if not, go to "API Token" under your
+Dataverse user name at the top of the page to generate it.
+Note that it is very important to include the "-directupload" option
+in that command line!
 
-Note that it is very important to include the "-directupload" option in that command line!
+=====
+
+2. A more advanced case, when a user is interested in uploading a
+directory-worth of files, preserving the folder path names in the
+process:
 
 =====
 
-2. A more advanced case, when a user is interested in uploading a directory-worth of files, preserving the folder path names in the process:
-
-=====
-DVUploader has been developed one of our collaborators outside Harvard. It can be obtained here: https://github.com/GlobalDataverseCommunityConsortium/dataverse-uploader
+DVUploader has been developed one of our collaborators outside
+Harvard. It can be obtained here:
+https://github.com/GlobalDataverseCommunityConsortium/dataverse-uploader
 
 Please make sure to use it with the -directupload option.
-It may make sense to try it on a single file first. If that works, you can try it on a folder, with the -recurse option added.
+It may make sense to try it on a single file first. If that works, you
+can try it on a folder, with the -recurse option added.
 
 So your full command line will be something like
 
@@ -48,9 +63,12 @@ java -jar DVUploader-v1.0.9.jar -directupload -key=YOUR_API_TOKEN
 -did=doi:10.7910/DVN/XXX -server=https://dataverse.harvard.edu -recurse
 YOUR_FOLDER_NAME
 
-Note the "YOUR_API_TOKEN" parameter. Have you used any of our APIs that require an API token? if not, go to "API Token" under your Dataverse user name at the top of the page to generate it.
+Note the "YOUR_API_TOKEN" parameter. Have you used any of our APIs
+that require an API token? if not, go to "API Token" under your
+Dataverse user name at the top of the page to generate it.
 
-Note that it is very important to include the "-directupload" and "-recursive" options in that command line!
+Note that it is very important to include the "-directupload" and
+"-recursive" options in that command line!
 
 Please let us know how it goes.
 
