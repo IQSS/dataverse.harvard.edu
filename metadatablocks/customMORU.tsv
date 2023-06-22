@@ -1,0 +1,49 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	customMORU	MORU	MORU Metadata													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	moruStudyDesign	Study Design	Methods and procedures to collect and analyse data in a study		text	0		TRUE	TRUE	FALSE	TRUE	TRUE	TRUE		customMORU	
+	moruAgeGroup	Age Group	Classification of persons by pre-defined age bands		text	1		TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		customMORU	
+	moruGender	Gender	Characteristics of reproductive structure, functions, phenotype, and genotype that differentiate the male from female organism		text	2		TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		customMORU	
+	moruCondition	Condition	A disease, signs, and symptoms that affect an entire body or parts of a human body		none	3		TRUE	FALSE	TRUE	FALSE	TRUE	FALSE		customMORU	
+	moruConditionName	Name	Controlled vocabulary term		text	4	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	moruCondition	customMORU	
+	moruConditionType	Type	The thesaurus defining the condition		text	5	(#VALUE)	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	moruCondition	customMORU	
+	moruConditionNameUri	URL	A URL to the controlled vocabulary term in the thesaurus	https://	url	6	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	moruCondition	customMORU	
+	moruIntervention	Intervention	A specific treatment, procedure, or action being tested in the study to determine its effectiveness in preventing, diagnosing, or treating a particular health condition or disease		none	7		FALSE	TRUE	TRUE	FALSE	TRUE	FALSE		customMORU	
+	moruInterventionCategory	Category	Broad classification		text	8	#VALUE:	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	moruIntervention	customMORU	
+	moruInterventionName	Name	Controlled vocabulary term		text	9	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	moruIntervention	customMORU	
+	moruInterventionType	Type	The thesaurus defining the intervention		text	10	(#VALUE)	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	moruIntervention	customMORU	
+	moruInventionNameUri	URL	A URL to the controlled vocabulary term in the thesaurus	https://	url	11	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	moruIntervention	customMORU	
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	moruStudyDesign	Clinical Trial	http://id.nlm.nih.gov/mesh/D002986	0												
+	moruStudyDesign	Case-Control	http://id.nlm.nih.gov/mesh/D016022	1												
+	moruStudyDesign	Cohort	http://id.nlm.nih.gov/mesh/D015331	2												
+	moruStudyDesign	Cross-sectional	http://id.nlm.nih.gov/mesh/D003430	3												
+	moruStudyDesign	Other		4												
+	moruAgeGroup	Neonate (1-28 days)	http://id.nlm.nih.gov/mesh/D007231	0												
+	moruAgeGroup	Infant (1-11 months)	http://id.nlm.nih.gov/mesh/D007223	1												
+	moruAgeGroup	Child (1-12 years)	http://id.nlm.nih.gov/mesh/D002648	2												
+	moruAgeGroup	Adolescent (13-18 years)	http://id.nlm.nih.gov/mesh/D000293	3												
+	moruAgeGroup	Adult (>18 years)	http://id.nlm.nih.gov/mesh/D000328	4												
+	moruGender	Male	http://id.nlm.nih.gov/mesh/D008297	0												
+	moruGender	Female	http://id.nlm.nih.gov/mesh/D005260	1												
+	moruGender	Unspecified or Other		2												
+	moruConditionType	MeSH		0												
+	moruConditionType	ICD-10		1												
+	moruConditionType	SNOMED-CT		2												
+	moruConditionType	MedDRA		3												
+	moruConditionType	NCBI		4												
+	moruInterventionCategory	Drugs		0												
+	moruInterventionCategory	Cellular and gene therapies		1												
+	moruInterventionCategory	Medical devices		2												
+	moruInterventionCategory	Surgery		3												
+	moruInterventionCategory	Radiotherapy		4												
+	moruInterventionCategory	Psychological and behavioural		5												
+	moruInterventionCategory	Physical		6												
+	moruInterventionCategory	Complementary		7												
+	moruInterventionCategory	Resources and infrastructure 		8												
+	moruInterventionCategory	Other		9												
+	moruInterventionType	MeSH		0												
+	moruInterventionType	ICD-10		1												
+	moruInterventionType	SNOMED-CT		2												
+	moruInterventionType	RxNorm		3												
+	moruInterventionType	LOINC		4												
