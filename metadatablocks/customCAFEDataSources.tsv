@@ -3,7 +3,7 @@
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
 	cafeDerivedFromExistingDataset	Derived from Another Dataset	Indicates if this Dataset is derived from another dataset, such as a climate model		text	0		FALSE	TRUE	FALSE	TRUE	TRUE	TRUE		customCAFEDataSources	
 	cafeSourceData	Source Data	The source dataset from which this Dataset is derived		none	1	;	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataTitle	Title	The name or title of the source dataset from this Dataset is derived		text	2	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataTitle	Title	The name or title of the dataset from which this Dataset is derived		text	2	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataAuthor	Author	The author of the source dataset		text	3	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataInstitution	Institution	The institution or organization at which the source dataset was created, e.g. NASA		text	4	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataVersionNumber	Version Number	The version number of the source data		text	5	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
@@ -11,13 +11,13 @@
 	cafeSourceDataLastModifiedDate	Last Modified Date	The date on which the source dataset was last modified, as used in the derivation of this Dataset		date	7	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataDateObtained	Date Obtained	The date when this Dataset's depositor obtained the source dataset		date	8	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataType	Type	A broad categorization of the source data by method of data creation		text	9	#NAME: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
-	cafeSourceDataTypeOther	Other type	A broad categorization of the source data by method of data creation		text	10	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataTypeOther	Other Type	A broad categorization of the source data by method of data creation		text	10	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataSpatialResolution	Spatial Resolution	The horizontal grid spacing of the source data as a number with no unit		float	11	#NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataSpatialResolutionUnits	Spatial Resolution Units	The unit of the Spatial Resolution		text	12	#NAME: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataSpatialResolutionUnitsOther	Other Spatial Resolution Units	The unit of the Spatial Resolution		text	13	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataTimestep	Timestep	The temporal frequency of data in the source dataset		text	14	#NAME: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataTimestepOther	Other Timestep	The temporal frequency of data in the source dataset		text	15	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
-	cafeSourceDataAttribution	Attribution	Bibliographic reference(s) to the source data, which are typically included in the terms of use		textbox	16	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataAttribution	Attribution	Bibliographic references to the source data, which are typically included in the terms of use		textbox	16	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataDisclaimer	Disclaimer	Disclaimer text provided by the source dataset creators		textbox	17	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	cafeDerivedFromExistingDataset	Yes		0												
