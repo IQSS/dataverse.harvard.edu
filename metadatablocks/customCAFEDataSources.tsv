@@ -8,8 +8,8 @@
 	cafeSourceDataInstitution	Institution	The institution or organization at which the source dataset was created, e.g. NASA		text	4	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataVersionNumber	Version Number	The version number of the source data		text	5	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataDOIOrURL	DOI or URL	The unique identifier or web URL to the source dataset	https://	url	6	#NAME: <a href="#VALUE" target="_blank">#VALUE</a>	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
-	cafeSourceDataLastModifiedDate	Last Modified Date	The date on which the source dataset was last modified, as used in the derivation of this Dataset		date	7	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
-	cafeSourceDataDateObtained	Date Obtained	The date when this Dataset's depositor obtained the source dataset		date	8	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataLastModifiedDate	Last Modified Date	The date on which the source dataset was last modified, as used in the derivation of this Dataset	YYYY-MM-DD	date	7	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataDateObtained	Date Obtained	The date when this Dataset's depositor obtained the source dataset	YYYY-MM-DD	date	8	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataType	Type	A broad categorization of the source data by method of data creation		text	9	#NAME: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataTypeOther	Other Type	A broad categorization of the source data by method of data creation		text	10	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
 	cafeSourceDataSpatialResolution	Spatial Resolution	The horizontal grid spacing of the source data as a number with no unit		float	11	#NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	TRUE	cafeSourceData	customCAFEDataSources	
