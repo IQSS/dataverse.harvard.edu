@@ -1,7 +1,7 @@
 #metadataBlock	name	dataverseAlias	displayName	blockURI												
 	customCAFEDataLocation	CAFE	Metadata About Data Location													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
-	cafeGeospatialFileType	Includes a Geospatial File	Indicates if this Dataset includes a geospatial file (e.g. a raster or vector file)		text	0		FALSE	TRUE	FALSE	FALSE	TRUE	TRUE		customCAFEDataLocation	
+	cafeIncludesGeospatialFile	Includes a Geospatial File	Indicates if this Dataset includes a geospatial file (e.g. a raster or vector file)		text	0		FALSE	TRUE	FALSE	FALSE	TRUE	TRUE		customCAFEDataLocation	
 	cafeSpatialReferenceSystem	Spatial Reference System Name	Information about the coordinate reference system (CRS) of the data		none	1	;	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataLocation	
 	cafeSpatialReferenceSystemName	Name	The name of the coordinate reference system (CRS) used in the deposited data		text	2	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSpatialReferenceSystem	customCAFEDataLocation	
 	cafeSpatialReferenceSystemURL	URL	The link to the website with the full coordinate reference system (CRS) information, e.g. https://spatialreference.org/ref/esri/102003/html/	https://	url	3	#NAME: <a href="#VALUE" target="_blank">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSpatialReferenceSystem	customCAFEDataLocation	
@@ -9,7 +9,7 @@
 	cafeSpatialFileTypeOther	Other Spatial File Type	The file type of the geospatial data		text	5	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataLocation	
 	cafeSpatialResolution	Spatial Resolution	The spatial resolution of the raster data		none	6	;	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataLocation	
 	cafeSpatialResolutionValue	Value	The number value indicating the horizontal grid spacing of the raster data (e.g. "30" for 30 meter x 30 meter gridded data)		float	7	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	cafeSpatialResolution	customCAFEDataLocation	
-	cafeSpatialResolutionUnit	Unit	The unit for the resolution of the gridded data		text	8	#NAME: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	cafeSpatialResolution	customCAFEDataLocation	
+	cafeSourceDataSpatialResolutionUnit	Unit	The unit for the resolution of the gridded data		text	8	#NAME: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	cafeSpatialResolution	customCAFEDataLocation	
 	cafeSpatialResolutionUnitOther	Other Unit	The unit for the resolution of the gridded data		text	9	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSpatialResolution	customCAFEDataLocation	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	cafeIncludesGeospatialFile	Yes		0												

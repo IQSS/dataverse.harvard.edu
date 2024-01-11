@@ -2,7 +2,7 @@
 	customCAFEDataSources	CAFE	Metadata About Data Sources													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
 	cafeDerivedFromExistingDataset	Derived from Another Dataset	Indicates if this Dataset is derived from another dataset, such as a climate model		text	0		FALSE	TRUE	FALSE	TRUE	TRUE	TRUE		customCAFEDataSources	
-	cafeSourceDataTitle	Source Dataset Title	The name or title of the dataset from which this Dataset is derived		text	1	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE		customCAFEDataSources	
+	cafeSourceDataTitle	Source Dataset Title	The name or title of the dataset from which this Dataset is derived		text	1	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		customCAFEDataSources	
 	cafeSourceDataAuthor	Source Dataset Author	The author of the source dataset		text	2	#NAME: #VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		customCAFEDataSources	
 	cafeSourceDataInstitution	Source Dataset Institution	The institution or organization at which the source dataset was created, e.g. NASA		text	3	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		customCAFEDataSources	
 	cafeSourceDataVersionNumber	Source Dataset Version Number	The version number of the source data		text	4	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
