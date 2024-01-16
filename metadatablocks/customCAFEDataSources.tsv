@@ -11,7 +11,7 @@
 	cafeSourceDataDateObtained	Source Dataset Date Obtained	The date when this Dataset's depositor obtained the source dataset	YYYY-MM-DD	date	7		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
 	cafeSourceDataType	Source Dataset Type	A broad categorization of the source data by method of data creation		text	8		TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customCAFEDataSources	
 	cafeSourceDataTypeOther	Source Dataset Other Type	A broad categorization of the source data by method of data creation		text	9		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataSpatialResolution	Source Dataset Spatial Resolution	The horizontal grid spacing of the source data as a number with no unit		text	10		TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
+	cafeSourceDataSpatialResolution	Source Dataset Spatial Resolution	The horizontal grid spacing of the source data as a number with no unit		float	10		TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
 	cafeSourceDataSpatialResolutionUnit	Source Dataset Spatial Resolution Unit	The unit of the Spatial Resolution		text	11		TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customCAFEDataSources	
 	cafeSourceDataSpatialResolutionUnitOther	Other Source Dataset Spatial Resolution Unit	The unit of the Spatial Resolution		text	12		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
 	cafeSourceDataTimestep	Source Dataset Timestep	The temporal frequency of data in the source dataset		text	13		TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customCAFEDataSources	
