@@ -1,5 +1,5 @@
 #metadataBlock	name	dataverseAlias	displayName	blockURI												
-	customCAFEDataLocation	CAFE	Metadata About Data Location													
+	customCAFEDataLocation	CAFE	Metadata About Geospatial Files													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
 	cafeIncludesGeospatialFile	Includes a Geospatial File	Indicates if this Dataset includes a geospatial file (e.g. a raster or vector file)		text	0		FALSE	TRUE	FALSE	FALSE	TRUE	TRUE		customCAFEDataLocation	
 	cafeSpatialReferenceSystem	Spatial Reference System	Information about the coordinate reference system (CRS) of the data		none	1	;	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataLocation	
