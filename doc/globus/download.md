@@ -1,6 +1,6 @@
 # Downloading data via Globus in the Harvard IQSS Dataverse Archive.
 
-## Summary/Introduction
+## 1. Summary/Introduction
 
 This is a new and experimental service offered by Harvard Dataverse in collaboration with [Mass. Open Cloud](https://massopen.cloud/) (MOC) and [Northeast Storage Exchange](https://nese.mghpcc.org/) (NESE) for researchers looking to deposit large amounts (TBs) of data (aka "Big Data"). It combines the curation, publishing and access control capabilities of Dataverse with the existing Big Data storage infrastructure at NESE.
 
@@ -8,7 +8,7 @@ The most important distinctive feature of this service is that the data are acce
 
 The files are physically stored at the NESE facility (on tape and/or disk volumes there). Dataverse merely facilitates access to these storage "end points" for users' Globus clients. Neither downloads or downloads are streamed through Dataverse, but are carried out directly between the Globus end points.
 
-## Identifying Globus-stored Data Files in Dataverse
+## 2. Identifying Globus-stored Data Files in Dataverse
 
 Globus-accessible Datafiles are identified on Dataset pages by an extra blue label with the name of the specific Globus storage volume. In the following example the 2 files are shown to be stored on tape at NESE: 
 
@@ -18,13 +18,13 @@ In the file download menu, an extra blue _Globus Transfer_ icon indicates that i
 
 ![Globus Download Menu](GlobusDownloadMenu.png)
 
-## Globus pre-requisites:
+## 3. Globus pre-requisites:
 
-### Globus Account is Required
+### a. Globus Account is Required
 
 You may already be able to log in as a Globus user using your school or institution's federated login. Visit [www.globus.org](https://www.globus.org) and click "Login" at the top of the page, then check the list of participating authentication providers. If an institutional login is not an option, you can create a Globus Id at [globusid.org](https://www.globusid.org). For more information please see [How To Log In and Transfer Files with Globus ](https://docs.globus.org/guides/tutorials/manage-files/transfer-files/).
 
-### Globus Connect Personal 
+### b. Globus Connect Personal 
 
 [Globus Connect Personal](https://www.globus.org/globus-connect-personal) needs to be installed on the user's local system. 
 
@@ -38,11 +38,11 @@ This should take you to the Globus Web App page, confirming that your personal c
 
 ![Globus Web App Collection View](GlobusWebAppCollection.png)
 
-Since you will be transferring data into your collection, make sure that "Write Access" is checked in the _Access_ panel under _Preferences_. Keep the "Shareable" box unchecked, unless you actually have a need to make your personal collection accessible to any other Globus users.
+Since you will be transferring data into your collection, make sure that "Write Access" is checked in the _Access_ panel under _Preferences_. Keep the "Shareable" box unchecked, unless you actually have a need to make your personal collection accessible to other Globus users.
 
-## Initiating a Globus download from Dataverse - Borealis Globus App
+## 4. Borealis Globus App
 
-The download process relies on an extra software component, [dataverse-globus](https://github.com/scholarsportal/dataverse-globus), a web tool that serves as an interface between Dataverse and Globuas, developed by Borealis (formerly Scholars Portal), the Canadian Dataverse Repository project. Clicking on the Globus Transfer icon in the _File Access_ menu in the Dataverse UI will redirect you to the web app in a new tab.
+The download process relies on an extra software component, [dataverse-globus](https://github.com/scholarsportal/dataverse-globus), a web tool that serves as an interface between Dataverse and Globus that was developed by Borealis (formerly Scholars Portal), the Canadian Dataverse Repository project. Clicking on the Globus Transfer icon in the _File Access_ menu in the Dataverse UI will redirect you to the web app in a new tab.
 
 The Globus App will inform you if Globus Connect isn't installed or properly configured on your local system:
 
@@ -51,6 +51,8 @@ The Globus App will inform you if Globus Connect isn't installed or properly con
 Otherwise you will be prompted to log in using your Globus credentials (make sure you are using the same Globus account that your instance of Globus Connect Personal is configured with!). Then the app will present the view with 2 panels, source and destination, with the file you selected on the left and your personal collection (i.e., your home directory) on the right: 
 
 ![Dataverse Globus App Download View](DataverseGlobusDownload.png)
+
+## 5. Initiating a Globus Download from Dataverse
 
 Check the box next to the file you are downloading:
 
