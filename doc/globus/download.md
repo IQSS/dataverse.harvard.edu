@@ -44,11 +44,15 @@ Since you will be transferring data into your collection, make sure that "Write 
 
 The download process relies on an extra software component, [dataverse-globus](https://github.com/scholarsportal/dataverse-globus), a web tool that serves as an interface between Dataverse and Globus that was developed by Borealis (formerly Scholars Portal), the Canadian Dataverse Repository project. Clicking on the Globus Transfer icon in the _File Access_ menu in the Dataverse UI will redirect you to the web app in a new tab.
 
+The app will prompt you to log in using your Globus credentials, giving you a choice of authentication providers (make sure you are using the same Globus account that your instance of Globus Connect Personal is configured with!):
+
+![Dataverse Globus App Login](DataverseGlobusAppLogin.png)
+
 The Globus App will inform you if Globus Connect isn't installed or properly configured on your local system:
 
 ![Dataverse Globus App Error](DataverseGlobusAppError.png)
 
-Otherwise you will be prompted to log in using your Globus credentials (make sure you are using the same Globus account that your instance of Globus Connect Personal is configured with!). Then the app will present the view with 2 panels, source and destination, with the file you selected on the left and your personal collection (i.e., your home directory) on the right: 
+Otherwise the app will present the view with 2 panels, source and destination, with the file you selected on the left and your personal collection on the right: 
 
 ![Dataverse Globus App Download View](DataverseGlobusDownload.png)
 
