@@ -4,7 +4,7 @@
 
 This is a new and experimental service offered by Harvard Dataverse in collaboration with [Mass. Open Cloud](https://massopen.cloud/) (MOC) and [Northeast Storage Exchange](https://nese.mghpcc.org/) (NESE) for researchers looking to deposit large amounts (TBs) of data (aka "Big Data"). It combines the curation, publishing and access control capabilities of Dataverse with the existing Big Data storage infrastructure at NESE.
 
-The most important distinctive feature of this service is that the data are accessible via [Globus Data Transfer](https://www.globus.org/data-transfer) interface only. Globus makes TB-sized downloads practical, it offers a wide range of advanced features, handling interruptions and restart transparently in the background (among other things). But it also makes the download more complex than the traditional download methods, via the web pages or the API, that Dataverse offers on "normal" data files that it stores locally. (In other words, the process involves more steps than simply clicking on a download link in the browser and having the file saved on your computer). 
+The most important distinctive feature of this service is that the data are accessible via [Globus Data Transfer](https://www.globus.org/data-transfer) interface only. Globus makes TB-sized downloads practical, it offers a wide range of advanced features, handling interruptions and restarts transparently in the background (among other things). But it also makes the download more complex than the traditional download methods, via the web pages or the API, that Dataverse offers on "normal" data files that it stores locally. (In other words, the process involves more steps than simply clicking on a download link in the browser and having the file saved on your computer). 
 
 The files are physically stored at the NESE facility (on tape and/or disk volumes there). Dataverse merely facilitates access to these storage "end points" for users' Globus clients. Neither downloads or downloads are streamed through Dataverse, but are carried out directly between the Globus end points.
 
@@ -60,7 +60,7 @@ Check the box next to the file you are downloading:
 
 then click _Submit Transfer_ at the bottom of the page:
 
-![Dataverse Globus App Submit Transfer](DataverseGlobusAppSubmitDownload.png)
+![Dataverse Globus App Submit Transfer](DataverseGlobusAppSubmitTransfer.png)
 
 You should see the "Transfer Initiated" message. You can safely close the Globus App tab at this point, since its job is done. The transfer is now happening between the 2 Globus endpoints directly (your instance of Globus Connect Personal needs to be running for the duration of the proces).
 
