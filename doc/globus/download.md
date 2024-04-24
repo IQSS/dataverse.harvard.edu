@@ -26,7 +26,7 @@ You may already be able to log in as a Globus user using your school or institut
 
 ### b. Globus Connect Personal 
 
-[Globus Connect Personal](https://www.globus.org/globus-connect-personal) needs to be installed on the user's local system. 
+[Globus Connect Personal](https://www.globus.org/globus-connect-personal) is a free client offered by Globus. Linux, Mac and Windows versions are available.
 
 Once Globus Connect Personal is installed, you will be asked to log in using your Globus account. Globus protocol is based around the idea of transferring data between _collections_. Connect Personal will create a Globus Collection on your computer that can be used as the destination end point for data transfers. Note that it is also possible to transfer data to collections other than the one on your laptop - you may, for example, facilitate a transfer to an end point hosted by your school where you have write access. But for the purposes of this instruction, we are working on the assumption that you are downloading the data locally. 
 
@@ -50,7 +50,7 @@ The app will prompt you to log in using your Globus credentials, giving you a ch
 
 ![Dataverse Globus App Login](DataverseGlobusAppLogin.png)
 
-The Globus App will inform you if Globus Connect isn't installed or properly configured on your local system:
+The Borealis App will inform you if Globus Connect isn't installed or properly configured on your local system:
 
 ![Dataverse Globus App Error](DataverseGlobusAppError.png)
 
@@ -68,7 +68,7 @@ then click _Submit Transfer_ at the bottom of the page:
 
 ![Dataverse Globus App Submit Transfer](DataverseGlobusAppSubmitDownload.png)
 
-You should see the "Transfer Initiated" message. You can safely close the Globus App tab at this point, since its job is done. The transfer is now happening between the 2 Globus endpoints directly (your instance of Globus Connect Personal needs to be running for the duration of the proces).
+You should see the "Transfer Initiated" message. You can safely close the Borealis App at this point, since its job is done. The transfer is now happening between the 2 Globus endpoints directly (your instance of Globus Connect Personal needs to be running for the duration of the proces).
 
 With long-running downloads of large files, the [Activity](https://app.globus.org/activity) tab of the Globus Web App can be used to monitor the progress of the transfers.
 
