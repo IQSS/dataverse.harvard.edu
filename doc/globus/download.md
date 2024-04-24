@@ -1,4 +1,4 @@
-# How to download data via Globus in the Harvard IQSS Dataverse Archive.
+# Downloading data via Globus in the Harvard IQSS Dataverse Archive.
 
 ## Summary/Introduction
 
@@ -24,11 +24,11 @@ In the file download menu, an extra blue _Globus Transfer_ icon indicates that i
 
 You may already be able to log in as a Globus user using your school or institution's federated login. Visit [www.globus.org](https://www.globus.org) and click "Login" at the top of the page check the list of participating authentication providers offered. If an institutional login is not an option, you can create a (free) Globus Id at https://globusid.org. For more infiormation [How To Log In and Transfer Files with Globus ](https://docs.globus.org/guides/tutorials/manage-files/transfer-files/).
 
-### [Globus Connect Personal](https://www.globus.org/globus-connect-personal)
+### Globus Connect Personal 
 
-Globus Connect Personal needs to be installed on the user's local system.
+[Globus Connect Personal](https://www.globus.org/globus-connect-personal) needs to be installed on the user's local system. 
 
-Once Globus Connect Personal is installed, you will be asked to log in using your Globus account. It will then create a Globus Collection - your home directory, by default - that can be used as the destination end point for data transfers.
+Once Globus Connect Personal is installed, you will be asked to log in using your Globus account. Globus protocol is based around the idea of transferring data between _collections_. Connect Personal will create a Globus Collection on your computer - your home directory, by default - that can be used as the destination end point for data transfers. Note that it is definitely possible to transfer data to collections other than the one on your laptop - you may, for example, facilitate a transfer to an end point hosted by your school where you have write access. But for the purposes of this instruction, we are working on the assumption that you are downloading the data locally. 
 
 Verify that your new collection is properly set up by clicking the "View Collection Details" in the menu (MacOS version shown):
 
