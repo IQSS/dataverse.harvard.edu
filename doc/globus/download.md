@@ -20,9 +20,9 @@ In the file download menu, an extra blue _Globus Transfer_ icon indicates that i
 
 ## Globus pre-requisites:
 
-### Globus account is required in order to use Globus technology
+### Globus Account is Required
 
-You may already be able to log in as a Globus user using your school or institution's federated login. Visit [www.globus.org](https://www.globus.org) and click "Login" at the top of the page check the list of participating authentication providers offered. If an institutional login is not an option, you can create a (free) Globus Id at https://globusid.org. For more infiormation [How To Log In and Transfer Files with Globus ](https://docs.globus.org/guides/tutorials/manage-files/transfer-files/).
+You may already be able to log in as a Globus user using your school or institution's federated login. Visit [www.globus.org](https://www.globus.org) and click "Login" at the top of the page, then check the list of participating authentication providers. If an institutional login is not an option, you can create a Globus Id at [globusid.org](https://www.globusid.org). For more information please see [How To Log In and Transfer Files with Globus ](https://docs.globus.org/guides/tutorials/manage-files/transfer-files/).
 
 ### Globus Connect Personal 
 
