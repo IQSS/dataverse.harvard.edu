@@ -62,7 +62,7 @@ Navigate to the file you want to upload in the left panel and check the box next
 
 then click _Submit Transfer_ at the bottom of the page:
 
-![Dataverse Globus App Submit Transfer](DataverseGlobusAppSubmitTransfer.png)
+![Dataverse Globus App Submit Transfer](DataverseGlobusAppSubmitUpload.png)
 
 You should see the "Transfer Initiated" message. You can safely close the Globus App tab at this point, since its job is done. The transfer is now happening between the 2 Globus endpoints directly (your instance of Globus Connect Personal needs to be running for the duration of the proces; the process can be safely interrupted however - the transfer will restart automatically once the collection is up and running again). The Dataset will remain locked while the transfer is in progress. 
 

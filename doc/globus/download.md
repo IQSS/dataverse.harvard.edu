@@ -60,7 +60,7 @@ Check the box next to the file you are downloading:
 
 then click _Submit Transfer_ at the bottom of the page:
 
-![Dataverse Globus App Submit Transfer](DataverseGlobusAppSubmitTransfer.png)
+![Dataverse Globus App Submit Transfer](DataverseGlobusAppSubmitDownload.png)
 
 You should see the "Transfer Initiated" message. You can safely close the Globus App tab at this point, since its job is done. The transfer is now happening between the 2 Globus endpoints directly (your instance of Globus Connect Personal needs to be running for the duration of the proces).
 
