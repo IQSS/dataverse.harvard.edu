@@ -28,7 +28,7 @@ It is however possible that the data you are depositing is already accessible un
 
 [Globus Connect Personal](https://www.globus.org/globus-connect-personal) is a free client offered by Globus. Linux, Mac and Windows versions are available. Once installed on your computer, Globus Connect Personal will make your local files visible to the Globus network as a collection that can be used as the data transfer source. It will be limited initially to your home directory, but any other directory or volume local to your system can be added. "Local" in this context means files directly stored on your laptop, but also any external hard drives or any remote volumes (NFS, etc.) mounted over the network. 
 
-When you start Connect Personal, you will be asked to log in using your Globus account. Verify that your new collection is properly set up by clicking the "View Collection Details" in the menu (MacOS version shown):
+When you start Connect Personal, you will be asked to log in using your Globus account. Verify that your new collection is properly set up by clicking the "Web: Collection Details" in the menu (MacOS version shown):
 
 ![Globus Connect Personal Collection View](GlobusPersonalConnect.png)
 
