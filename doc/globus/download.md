@@ -6,7 +6,7 @@ This is a new and experimental service offered by Harvard Dataverse in collabora
 
 The most important distinctive feature of this service is that the data are accessible via [Globus Data Transfer](https://www.globus.org/data-transfer) interface only. Globus makes TB-sized downloads practical, it offers a wide range of advanced features, handling interruptions and restarts transparently in the background (among other things). But it also makes the download more complex than the traditional download methods, via the web pages or the API, that Dataverse offers on "normal" data files that it stores locally. (In other words, the process involves more steps than simply clicking on a download link in the browser and having the file saved on your computer). 
 
-The files are physically stored at the NESE facility (on tape and/or disk volumes there). Dataverse merely facilitates access to these storage "end points" for users' Globus clients. Neither downloads or downloads are streamed through Dataverse, but are carried out directly between the Globus end points.
+The files are physically stored at the NESE facility (on tape or disk volumes there). Dataverse merely facilitates access to these storage "end points" for users' Globus clients. Neither downloads or downloads are streamed through Dataverse, but are carried out directly between the Globus end points.
 
 ## 2. Identifying Globus-stored Data Files in Dataverse
 

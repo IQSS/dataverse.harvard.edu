@@ -6,11 +6,11 @@ This is a new and experimental service offered by Harvard Dataverse in collabora
 
 The most important distinctive feature of this service is that the data are accessible via [Globus Data Transfer](https://www.globus.org/data-transfer) interface only. Globus makes TB-sized transfers, uploads and downloads, practical, it offers a wide range of advanced features, handling interruptions and restarts transparently in the background (among other things). It also makes the upload workflow more complex than the methods traditionally offered in Dataverse, via the web pages or the API. (In other words, the process involves more steps than simply clicking on the upload link in the browser and picking a file on your drive). 
 
-Once deposited, the data files are physically stored at the NESE facility (on tape and/or disk volumes there). Dataverse merely facilitates access to these storage "end points" for users' Globus clients. Neither uploads nor downloads are streamed through Dataverse, but are carried out directly between the Globus end points.
+Once deposited, the data files are physically stored at the NESE facility (on tape or disk volumes there). Dataverse merely facilitates access to these storage "end points" for users' Globus clients. Neither uploads nor downloads are streamed through Dataverse, but are carried out directly between the Globus end points.
 
 Please see the [Datverse Globus Download](downloads.md) guide for an overview of the download workflow as seen by the end users who will be accessing your NESE-stored data via Globus. 
 
-If you aready familiar with Globus, the data upload workflow should be largely intuitive (some familiarity with the basic functionality of Dataverse would also help of course). The instruction below is written with a user who may have never used Globus in mind. 
+If you are aready familiar with Globus, the data upload workflow should be largely intuitive (some familiarity with the basic functionality of Dataverse would also help of course). The instruction below is written with a user who may have never used Globus in mind. 
 
 ## 2. Globus pre-requisites:
 
