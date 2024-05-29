@@ -40,7 +40,7 @@ If necessary, add any extra folders containing the data you are depositing to th
 
 ## 3. Borealis Globus App
 
-The upload process relies on an extra software component, [dataverse-globus](https://github.com/scholarsportal/dataverse-globus), a web tool that serves as an interface between Dataverse and Globus. It is being developed by Borealis (formerly Scholars Portal), the Canadian Dataverse Repository project. Clicking the "Upload with Globus" on the _Upload Files_ page in the Dataverse UI will redirect you to the Borealis App in a new tab:
+The upload process relies on an extra software component, [dataverse-globus](https://github.com/scholarsportal/dataverse-globus), a web tool that serves as an interface between Dataverse and Globus. It is being developed by Victoria Lubitch at Borealis (formerly Scholars Portal), the Canadian Dataverse Repository project. Clicking the "Upload with Globus" on the _Upload Files_ page in the Dataverse UI will redirect you to the Borealis App in a new tab:
 
 ![Upload with Globus Button](GlobusUploadButton.png)
 
