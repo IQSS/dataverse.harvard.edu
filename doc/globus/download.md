@@ -10,7 +10,7 @@ The files are physically stored at the NESE facility (on tape or disk volumes th
 
 ## 2. Identifying Globus-stored Data Files in Dataverse
 
-Globus-accessible Datafiles are identified on Dataset pages by an extra blue label with the name of the specific Globus storage volume. In the following example the 2 files are shown to be stored on tape at NESE: 
+Globus-accessible Datafiles are identified on Dataset pages by an extra blue label with the name of the specific Globus storage volume. In the following example the two files are shown to be stored on tape at NESE: 
 
 ![NESEtape Datafiles](NESETapeDatafiles.png)
 
