@@ -28,7 +28,7 @@ You may already be able to log in as a Globus user using your school or institut
 
 [Globus Connect Personal](https://www.globus.org/globus-connect-personal) is a free client offered by Globus. Linux, Mac and Windows versions are available.
 
-Once Globus Connect Personal is installed, you will be asked to log in using your Globus account. Globus protocol is based around the idea of transferring data between _collections_. Connect Personal will create a Globus Collection on your computer that can be used as the destination end point for data transfers. Note that it is also possible to transfer data to collections other than the one on your laptop - you may, for example, facilitate a transfer to an end point hosted by your school where you have write access. But for the purposes of this instruction, we are working on the assumption that you are downloading the data to your own computer. 
+Once Globus Connect Personal is installed, you will be asked to log in using your Globus account. The Globus protocol is based around the idea of transferring data between _collections_. Connect Personal will create a Globus Collection on your computer that can be used as the destination end point for data transfers. Note that it is also possible to transfer data to collections other than the one on your laptop - you may, for example, facilitate a transfer to an end point hosted by your school where you have write access. But for the purposes of this instruction, we are working on the assumption that you are downloading the data to your own computer. 
 
 Verify that your new collection is properly set up by clicking the "Web: Collection Details" in the menu (MacOS version shown):
 
