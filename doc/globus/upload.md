@@ -8,7 +8,7 @@ The most important distinctive feature of this service is that the data are acce
 
 Once deposited, the data files are physically stored at the NESE facility (on tape or disk volumes there). Dataverse merely facilitates access to these storage "end points" for users' Globus clients. Neither uploads nor downloads are streamed through Dataverse, but are carried out directly between the Globus end points.
 
-Please see the [Datverse Globus Download](download.md) guide for an overview of the download workflow as seen by the end users who will be accessing your NESE-stored data via Globus. 
+Please see the [Dataverse Globus Download](download.md) guide for an overview of the download workflow as seen by the end users who will be accessing your NESE-stored data via Globus. 
 
 If you are already familiar with Globus, the data upload workflow should be largely intuitive (some familiarity with the basic functionality of Dataverse would also help, of course). The instructions below are written with a user in mind who may have never used Globus before. 
 
