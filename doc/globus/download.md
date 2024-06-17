@@ -52,7 +52,7 @@ The dataverse-globus app will in turn redirect you to a Globus login page (make 
 
 ![Dataverse Globus App Login](DataverseGlobusAppLogin.png)
 
-The Borealis App will inform you if Globus Connect isn't installed or properly configured on your local system:
+The dataverse-globus app will inform you if Globus Connect isn't installed or properly configured on your local system:
 
 ![Dataverse Globus App Error](DataverseGlobusAppError.png)
 
