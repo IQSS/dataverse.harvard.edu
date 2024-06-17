@@ -46,7 +46,7 @@ The upload process relies on an extra software component, [dataverse-globus](htt
 
 (If you are not seeing the "Upload with Globus" button above on the uploads page, that likely means that your Dataverse Collection has not yet been configured to use NESE storage - please contact support to have that straightened out)
 
-The app will in turn redirect you to a Globus login page (make sure to use an account that has read access to your source collection, in case you have more than one):
+The dataverse-globus app will in turn redirect you to a Globus login page (make sure to use an account that has read access to your source collection, in case you have more than one):
 
 ![Dataverse Globus App Login](DataverseGlobusAppLogin.png)
 
