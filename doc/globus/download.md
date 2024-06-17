@@ -74,4 +74,4 @@ You should see the "Transfer Initiated" message. You can safely close the Boreal
 
 With long-running downloads of large files, the [Activity](https://app.globus.org/activity) tab of the Globus Web App can be used to monitor the progress of the transfers.
 
-Please keep in mind the experimental and _work in progress_ nature of both the Globus integration support in Dataverse and the Borealis Globus app. Please report to us any problems you may encounter in the process. 
+Please keep in mind the experimental and _work in progress_ nature of both the Globus integration support in Dataverse and the dataverse-globus app. Please report to us any problems you may encounter in the process. 
