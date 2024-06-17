@@ -1,4 +1,4 @@
-# Uploading Data via Globus in the Harvard IQSS Dataverse Archive.
+# Uploading Data via Globus at Harvard Dataverse Archive.
 
 ## 1. Summary/Introduction
 
@@ -38,9 +38,9 @@ This should take you to the Globus Web App page, confirming that your personal c
 
 If necessary, add any extra folders containing the data you are depositing to the collection in the _Access_ panel under _Preferences_. Since you are transferring data _from_ your collection, it is safe to leave the "Write Access" box unchecked. The "Shareable" box does not need to be checked either, unless you actually need to make your personal collection accessible to other Globus users.
 
-## 3. Borealis Globus App
+## 3. dataverse-globus App by Borealis/GDCC
 
-The upload process relies on an extra software component, [dataverse-globus](https://github.com/scholarsportal/dataverse-globus), a web tool that serves as an interface between Dataverse and Globus. It is being developed by Victoria Lubitch at Borealis (formerly Scholars Portal), the Canadian Dataverse Repository project. Clicking the "Upload with Globus" on the _Upload Files_ page in the Dataverse UI will redirect you to the Borealis App in a new tab:
+The upload process relies on an extra software component, [dataverse-globus](https://github.com/gdcc/dataverse-globus), a web tool that serves as an interface between Dataverse and Globus. It was originally developed by Victoria Lubitch at Borealis (formerly Scholars Portal), the Canadian Dataverse Repository project. Clicking the "Upload with Globus" on the _Upload Files_ page in the Dataverse UI will redirect you to the dataverse-globus app in a new tab:
 
 ![Upload with Globus Button](GlobusUploadButton.png)
 
