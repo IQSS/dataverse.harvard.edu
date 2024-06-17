@@ -48,7 +48,7 @@ The download process relies on an extra software component, [dataverse-globus](h
 
 ![Dataverse Globus App Download View](DataverseGlobusDownload.png)
 
-The app will in turn redirect you to a Globus login page  (make sure you are using the same Globus account that your instance of Globus Connect Personal is configured with!):
+The dataverse-globus app will in turn redirect you to a Globus login page (make sure you are using the same Globus account that your instance of Globus Connect Personal is configured with!):
 
 ![Dataverse Globus App Login](DataverseGlobusAppLogin.png)
 
