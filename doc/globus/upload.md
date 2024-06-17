@@ -72,4 +72,4 @@ You should see the "Transfer Initiated" message. You can safely close the datave
 
 You can use the [Activity](https://app.globus.org/activity) tab of the Globus Web App to monitor the progress. 
 
-Please keep in mind the experimental and _work in progress_ nature of both the Globus integration support in Dataverse and the Borealis app. Please report to us any problems you may encounter in the process. 
+Please keep in mind the experimental and _work in progress_ nature of both the Globus integration support in Dataverse and the dataverse-globus app. Please report to us any problems you may encounter in the process. 
