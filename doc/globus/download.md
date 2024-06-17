@@ -70,7 +70,7 @@ then click _Submit Transfer_ at the bottom of the page:
 
 ![Dataverse Globus App Submit Transfer](DataverseGlobusAppSubmitDownload.png)
 
-You should see the "Transfer Initiated" message. You can safely close the Borealis App at this point, since its job is done. The transfer is now happening between the 2 Globus endpoints directly (your instance of Globus Connect Personal needs to be running for the duration of the proces).
+You should see the "Transfer Initiated" message. You can safely close the dataverse-globus app at this point, since its job is done. The transfer is now happening between the two Globus endpoints directly (your instance of Globus Connect Personal needs to be running for the duration of the proces).
 
 With long-running downloads of large files, the [Activity](https://app.globus.org/activity) tab of the Globus Web App can be used to monitor the progress of the transfers.
 
