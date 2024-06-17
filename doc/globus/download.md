@@ -46,6 +46,8 @@ Your Personal Collection will be limited initially to your home directory, but a
 
 The download process relies on an extra software component, [dataverse-globus](https://github.com/gdcc/dataverse-globus), a web tool that serves as an interface between Dataverse and Globus. It was originally developed by Victoria Lubitch at Borealis (formerly Scholars Portal), the Canadian Dataverse Repository project. Clicking on the Globus Transfer icon in the _File Access_ menu in the Dataverse UI will redirect you to the dataverse-globus app in a new tab.
 
+![Globus Download Menu](GlobusDownloadMenu.png)
+
 ![Dataverse Globus App Download View](DataverseGlobusDownload.png)
 
 The dataverse-globus app will in turn redirect you to a Globus login page (make sure you are using the same Globus account that your instance of Globus Connect Personal is configured with!):
