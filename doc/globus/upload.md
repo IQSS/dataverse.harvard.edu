@@ -54,7 +54,7 @@ The Borealis App will inform you if Globus Connect isn't installed or properly c
 
 ![Dataverse Globus App Error](DataverseGlobusAppError.png)
 
-Otherwise the app will show 2 panels, source on the left, and the destination on the right: 
+Otherwise the app will show two panels, source on the left, and the destination on the right: 
 
 ![Dataverse Globus App Upload View](DataverseGlobusAppUpload.png)
 
