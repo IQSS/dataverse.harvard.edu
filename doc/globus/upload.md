@@ -46,11 +46,11 @@ The upload process relies on an extra software component, [dataverse-globus](htt
 
 (If you are not seeing the "Upload with Globus" button above on the uploads page, that likely means that your Dataverse Collection has not yet been configured to use NESE storage - please contact support to have that straightened out)
 
-The app will in turn redirect you to a Globus login page (make sure to use an account that has read access to your source collection, in case you have more than one):
+The dataverse-globus app will in turn redirect you to a Globus login page (make sure to use an account that has read access to your source collection, in case you have more than one):
 
 ![Dataverse Globus App Login](DataverseGlobusAppLogin.png)
 
-The Borealis App will inform you if Globus Connect isn't installed or properly configured on your local system, giving you an option to select a different Globus collection:
+The dataverse-globus app will inform you if Globus Connect isn't installed or properly configured on your local system, giving you an option to select a different Globus collection:
 
 ![Dataverse Globus App Error](DataverseGlobusAppError.png)
 
@@ -68,8 +68,8 @@ then click _Submit Transfer_ at the bottom of the page:
 
 ![Dataverse Globus App Submit Transfer](DataverseGlobusAppSubmitUpload.png)
 
-You should see the "Transfer Initiated" message. You can safely close the Borealis App at this point, since its job is done. The transfer is now happening between the 2 Globus endpoints directly (your instance of Globus Connect Personal needs to be running for the duration of the process; the process can be safely interrupted however - the transfer will restart automatically once the collection is up and running again). The Dataset will remain locked while the transfer is in progress. 
+You should see the "Transfer Initiated" message. You can safely close the dataverse-globus app at this point, since its job is done. The transfer is now happening between the two Globus endpoints directly (your instance of Globus Connect Personal needs to be running for the duration of the process; the process can be safely interrupted however - the transfer will restart automatically once the collection is up and running again). The Dataset will remain locked while the transfer is in progress. 
 
 You can use the [Activity](https://app.globus.org/activity) tab of the Globus Web App to monitor the progress. 
 
-Please keep in mind the experimental and _work in progress_ nature of both the Globus integration support in Dataverse and the Borealis app. Please report to us any problems you may encounter in the process. 
+Please keep in mind the experimental and _work in progress_ nature of both the Globus integration support in Dataverse and the dataverse-globus app. Please report to us any problems you may encounter in the process. 
