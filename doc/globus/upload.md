@@ -10,7 +10,7 @@ Once deposited, the data files are physically stored at the NESE facility (on ta
 
 Please see the [Datverse Globus Download](download.md) guide for an overview of the download workflow as seen by the end users who will be accessing your NESE-stored data via Globus. 
 
-If you are aready familiar with Globus, the data upload workflow should be largely intuitive (some familiarity with the basic functionality of Dataverse would also help of course). The instruction below is written with a user who may have never used Globus in mind. 
+If you are already familiar with Globus, the data upload workflow should be largely intuitive (some familiarity with the basic functionality of Dataverse would also help, of course). The instructions below are written with a user in mind who may have never used Globus before. 
 
 ## 2. Globus pre-requisites:
 
