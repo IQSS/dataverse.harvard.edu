@@ -14,7 +14,7 @@ Globus-accessible Datafiles are identified on Dataset pages by an extra blue lab
 
 ![NESEtape Datafiles](NESETapeDatafiles.png)
 
-In the _File Access_ menu, an extra blue _Globus Transfer_ icon indicates that instead of a traditional browser download a Globus-specific workflow will be initiated:
+In the _File Access_ menu, an extra round, blue _Globus Transfer_ icon indicates that instead of a traditional browser download, a Globus-specific workflow will be initiated:
 
 ![Globus Download Menu](GlobusDownloadMenu.png)
 
