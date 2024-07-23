@@ -7,4 +7,7 @@ Additionally, configuration files for Harvard Dataverse are kept here, including
 - [customization](customization): custom header, footer, etc.
 - [metadatablocks](metadatablocks): custom metadata blocks
 
+### External Tools:
+- [datacurationtool](scripts/datacurationtool): Data Curation Tool
+
 You may also find a script or two.

@@ -1,0 +1,21 @@
+version: "2.4"
+
+services:
+  dev_datacurationtool:
+    container_name: "dev_datacurationtool"
+    hostname: datacurationtool
+    image: datacurationtool
+    restart: on-failure
+    build: https://github.com/scholarsportal/Dataverse-Data-Curation-Tool.git
+    environment:
+      - http.host=0.0.0.0
+      - transport.host=localhost
+      - network.host=0.0.0.0
+    ports:
+      - "4200:80" # Proxy HTTP (Data Curation Tool Listener) / NGINX(Docker)
+    networks:
+      - dataverse
+
+networks:
+  dataverse:
+    external: true
