@@ -1,0 +1,4 @@
+# do not track IntelliJ IDEA files
+.idea
+**/*.iml
+/bin/
