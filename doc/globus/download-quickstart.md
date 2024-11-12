@@ -30,14 +30,14 @@ Dataverse will then redirect you to the dedicated Globus user interface ("datave
 
 Unless you are already logged in, you will be further redirected to the Globus login page. Make sure you are using the same Globus account that you used to configure your instance of Globus Connect Personal:
 
-![Dataverse Globus App Login](DataverseGlobusAppLogin_.png)
+![Dataverse Globus App Login](DataverseGlobusAppLogin.png)
 
-You will see an error message if your Globus Connect Personal isn't running. Then simply close the tab, start Globus Connect Personal and try again. The application should be in your Applications folder on the MacOS or the equivalent locations on Windows and Linux. 
+**You will see an error message if your Globus Connect Personal isn't running**. Then simply close the tab, start Globus Connect Personal and try again. The application should be in your Applications folder on the MacOS or the equivalent locations on Windows and Linux. 
 
-The Globus webapp should now present you the following view with 2 panels. The file you selected should appear as the "source" on the left. Your local home directory should appear as the "destination" on the right:
+The Globus webapp should now present you the following view with 2 panels. The file you selected should appear as the "source" on the left. Your local home directory should appear as the "destination" on the right: (please note that it may take some time for this view to initialize! if you are not seeing the files you had selected on the left, please give it some time)
 
 
-![Dataverse Globus App Download View](DataverseGlobusAppDownload_.png)
+![Dataverse Globus App Download View](DataverseGlobusAppDownload.png)
 
 Check the box next to the file you are downloading. Then click _Submit Transfer_ at the bottom of the page:
 
@@ -47,4 +47,4 @@ You should see the "Transfer Initiated" message. Note that you can safely close 
 
 With long-running downloads of large files, the [Activity](https://app.globus.org/activity) tab on the central Globus Web App site can be used to monitor the progress of the transfers.
 
-Once the download is complete, the file(s) will be in your home directory when using the MacOS version of Globus Connect or in your Documents folder on Windows. These locations can be further modified (for example, you can choose a larger external drive for the downloaded data). For more on this, see the [detailed download guide](download.md).   
+Once the download is complete, the file(s) will be in your home directory when using the MacOS version of Globus Connect or in your Documents folder on Windows. These locations can be further modified (for example, you can choose a larger external drive for the downloaded data). For more on this and other extrra information, see the [detailed download guide](download.md).   
