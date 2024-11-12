@@ -32,7 +32,7 @@ Unless you are already logged in, you will be further redirected to the Globus l
 
 ![Dataverse Globus App Login](DataverseGlobusAppLogin_.png)
 
-You will see an error message if your Globus Connect Personal isn't running. Then simply close the tab, start Globus Connect Personal and try again.
+You will see an error message if your Globus Connect Personal isn't running. Then simply close the tab, start Globus Connect Personal and try again. The application should be in your Applications folder on the MacOS or the equivalent locations on Windows and Linux. 
 
 The Globus webapp should now present you the following view with 2 panels. The file you selected should appear as the "source" on the left. Your local home directory should appear as the "destination" on the right:
 
@@ -47,3 +47,4 @@ You should see the "Transfer Initiated" message. Note that you can safely close 
 
 With long-running downloads of large files, the [Activity](https://app.globus.org/activity) tab on the central Globus Web App site can be used to monitor the progress of the transfers.
 
+Once the download is complete, the file(s) will be in your home directory when using the MacOS version of Globus Connect or in your Documents folder on Windows. These locations can be further modified (for example, you can choose a larger external drive for the downloaded data). For more on this, see the [detailed download guide](download.md).   
