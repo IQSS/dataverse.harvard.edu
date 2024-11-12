@@ -16,7 +16,7 @@ Data at NESE storage can be accessed using Globus transfer protocol (no HTTP acc
 
 In order to complete the installation you will be asked to log in as a Globus user. You will likely be able to log in using your school or institution's federated login. If this is not an option, if your institution does not appear in the list of participating organizations, you can create a Globus Id at [globusid.org](https://www.globusid.org).
 
-Once Globus Personal Connect is installed, you will need to make sure it is running before you can initiate any Globus downloads from Dataverse.
+Once Globus Personal Connect is installed, you will need to make sure it is started before you can initiate any Globus downloads from Dataverse.
 
 ## 3. Initiate the Download
 
