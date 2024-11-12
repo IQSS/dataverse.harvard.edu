@@ -39,11 +39,7 @@ The Globus webapp should now present you the following view with 2 panels. The f
 
 ![Dataverse Globus App Download View](DataverseGlobusAppDownload_.png)
 
-Check the box next to the file you are downloading:
-
-![Dataverse Globus App Select File](DataverseGlobusAppFileSelect.png)
-
-then click _Submit Transfer_ at the bottom of the page:
+Check the box next to the file you are downloading. Then click _Submit Transfer_ at the bottom of the page:
 
 ![Dataverse Globus App Submit Transfer](DataverseGlobusAppSubmitDownload.png)
 
