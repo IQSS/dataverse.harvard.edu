@@ -53,5 +53,5 @@ then click _Submit Transfer_ at the bottom of the page:
 
 You should see the "Transfer Initiated" message. Note that you can safely close the dataverse-globus tab, and any other Dataverse pages at this point. The download is now happening directly between the Globus endpoint at NESE and your instance of Globus Connect Personal. The latter needs to be running for the duration of the proces. However, it can be safely stopped and restarted and your computer can be disconnected from the network, and Globus will automatically resume the transfer when it's back online.  
 
-With long-running downloads of large files, the [Activity](https://app.globus.org/activity) tab of the central Globus Web App site can be used to monitor the progress of the transfers.
+With long-running downloads of large files, the [Activity](https://app.globus.org/activity) tab on the central Globus Web App site can be used to monitor the progress of the transfers.
 
