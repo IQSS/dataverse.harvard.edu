@@ -38,7 +38,7 @@ You will see the following error message if your Globus Connect Personal isn't r
 
 then close the tab, start Globus Connect Personal and try again.
 
-The Globus webapp should now present you the following view with 2 panels. The file you selected should appear as the "source" on the left. Your local home directory should appear on the right as your "Personal Collection":
+The Globus webapp should now present you the following view with 2 panels. The file you selected should appear as the "source" on the left. Your local home directory should appear as the "destination" on the right:
 
 
 ![Dataverse Globus App Download View](DataverseGlobusDownload.png)
