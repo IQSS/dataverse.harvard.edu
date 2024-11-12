@@ -16,7 +16,7 @@ Data at NESE storage can be accessed using Globus transfer protocol (no HTTP acc
 
 In order to complete the installation you will be asked to log in as a Globus user. You will likely be able to log in using your school or institution's federated login. If this is not an option, if your institution does not appear in the list of participating organizations, you can create a Globus Id at [globusid.org](https://www.globusid.org).
 
-Once Globus Personal Connect is installed, you will need to make sure it is running before you can initiate any Globus downloads from Dataverse.
+Once Globus Personal Connect is installed, you will need to make sure it is started before you can initiate any Globus downloads from Dataverse.
 
 ## 3. Initiate the Download
 
@@ -38,7 +38,7 @@ You will see the following error message if your Globus Connect Personal isn't r
 
 then close the tab, start Globus Connect Personal and try again.
 
-The Globus webapp should now present you the following view with 2 panels. The file you selected should appear as the "source" on the left. Your local home directory should appear on the right as your "Personal Collection":
+The Globus webapp should now present you the following view with 2 panels. The file you selected should appear as the "source" on the left. Your local home directory should appear as the "destination" on the right:
 
 
 ![Dataverse Globus App Download View](DataverseGlobusDownload.png)
@@ -53,5 +53,5 @@ then click _Submit Transfer_ at the bottom of the page:
 
 You should see the "Transfer Initiated" message. Note that you can safely close the dataverse-globus tab, and any other Dataverse pages at this point. The download is now happening directly between the Globus endpoint at NESE and your instance of Globus Connect Personal. The latter needs to be running for the duration of the proces. However, it can be safely stopped and restarted and your computer can be disconnected from the network, and Globus will automatically resume the transfer when it's back online.  
 
-With long-running downloads of large files, the [Activity](https://app.globus.org/activity) tab of the central Globus Web App site can be used to monitor the progress of the transfers.
+With long-running downloads of large files, the [Activity](https://app.globus.org/activity) tab on the central Globus Web App site can be used to monitor the progress of the transfers.
 
