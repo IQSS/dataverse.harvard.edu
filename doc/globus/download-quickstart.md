@@ -1,4 +1,4 @@
-# Quick Start: Downloading data from NESE via Globus
+# Downloading data from NESE via Globus: Quick Start
 
 This is a simplified instruction on how to download files from NESE to your personal computer. A more [detailed guide](download.md) is available with information on extra use cases, troubleshooting and more. 
 
