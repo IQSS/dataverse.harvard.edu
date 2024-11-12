@@ -30,18 +30,14 @@ Dataverse will then redirect you to the dedicated Globus user interface ("datave
 
 Unless you are already logged in, you will be further redirected to the Globus login page. Make sure you are using the same Globus account that you used to configure your instance of Globus Connect Personal:
 
-![Dataverse Globus App Login](DataverseGlobusAppLogin.png)
+![Dataverse Globus App Login](DataverseGlobusAppLogin_.png)
 
-You will see the following error message if your Globus Connect Personal isn't running:
-
-![Dataverse Globus App Error](DataverseGlobusAppError.png)
-
-then close the tab, start Globus Connect Personal and try again.
+You will see an error message if your Globus Connect Personal isn't running. Then simply close the tab, start Globus Connect Personal and try again.
 
 The Globus webapp should now present you the following view with 2 panels. The file you selected should appear as the "source" on the left. Your local home directory should appear as the "destination" on the right:
 
 
-![Dataverse Globus App Download View](DataverseGlobusDownload.png)
+![Dataverse Globus App Download View](DataverseGlobusAppDownload_.png)
 
 Check the box next to the file you are downloading:
 
