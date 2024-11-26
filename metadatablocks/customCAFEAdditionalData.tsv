@@ -1,7 +1,7 @@
 #metadataBlock	name	dataverseAlias	displayName	blockURI												
 	AdditionalMetadataAboutDataset		Additional Metadata About Dataset													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
-	cafeDatasetTerms	CCH Terms	Controlled vocabulary		text	0	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		AdditionalMetadataAboutDataset
+	cafeDatasetTerms	CCH Terms	Keywords from the Climate Change and Human Health (CCH) Glossary terms developed by NIEHS that are applicable to this dataset.		text	0	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		AdditionalMetadataAboutDataset
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder
 	cafeDatasetTerms	Acclimatization		0
 	cafeDatasetTerms	Adaptation		1
