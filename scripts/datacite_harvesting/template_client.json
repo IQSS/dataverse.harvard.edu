@@ -1,0 +1,14 @@
+{
+    "useOaiIdentifiersAsPids": true,
+    "useListRecords": true,
+    "allowHarvestingMissingCVV": false,
+    "set": "~%SET%",
+    "nickName": "%ALIAS%",
+    "dataverseAlias": "%ALIAS%",
+    "type": "oai",
+    "style": "default",
+    "harvestUrl": "https://oai.datacite.org/oai",
+    "archiveUrl": "https://oai.datacite.org",
+    "archiveDescription": "The metadata for the Dataset was harvested from DataCite. Clicking the dataset link will take you directly to the original archival location, as registered with DataCite.",
+    "metadataFormat": "oai_dc"
+  }
