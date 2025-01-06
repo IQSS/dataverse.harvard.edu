@@ -48,7 +48,7 @@ The step above will produce individual harvesting configurations for each subcol
 ## Step 3.: then the harvesting clients can be created as follows:
 
 ```shell
-cat bertarelli_subcollections_unique.txt  | 
+cat bertarelli_subcollections.txt  | 
 while read alias
 do 
    curl  -H "X-Dataverse-key: [redacted]" -X POST -H "Content-Type: application/json" "http://localhost:8080/api/harvest/clients/${alias}" --upload-file clients/${alias}.json
