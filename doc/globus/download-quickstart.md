@@ -16,11 +16,11 @@ Data at NESE storage can be accessed using Globus transfer protocol (no HTTP acc
 
 In order to complete the installation you will be asked to log in as a Globus user. You will likely be able to log in using your school or institution's federated login. If this is not an option, if your institution does not appear in the list of participating organizations, you can create a Globus Id at [globusid.org](https://www.globusid.org).
 
-Once Globus Personal Connect is installed, you will need to make sure it is started before you can initiate any Globus downloads from Dataverse.
+Once Globus Connect Personal is installed, you will need to make sure it is started before you can initiate any Globus downloads from Dataverse.
 
 ## 3. Initiate the Download
 
-Downloads can only be initiated from dataset pages at Harvard Dataverse. (I.e. these files cannot be accessed via Globus directly in a way that bypasses Dataverse).    
+Downloads can only be initiated from dataset pages at Harvard Dataverse. (i.e. these files cannot be accessed via Globus directly in a way that bypasses Dataverse).    
 
 To download a single file, open the _File Access_ menu and click on the blue _Globus Transfer_ icon:
 
@@ -43,8 +43,8 @@ Check the box next to the file you are downloading. Then click _Submit Transfer_
 
 ![Dataverse Globus App Submit Transfer](DataverseGlobusAppSubmitDownload.png)
 
-You should see the "Transfer Initiated" message. Note that you can safely close the dataverse-globus tab, and any other Dataverse pages at this point. The download is now happening directly between the Globus endpoint at NESE and your instance of Globus Connect Personal. The latter needs to be running for the duration of the proces. However, it can be safely stopped and restarted and your computer can be disconnected from the network, and Globus will automatically resume the transfer when it's back online.  
+You should see the "Transfer Initiated" message. Note that you can safely close the dataverse-globus tab, and any other Dataverse pages at this point. The download is now happening directly between the Globus endpoint at NESE and your instance of Globus Connect Personal. The latter needs to be running for the duration of the process. However, it can be safely stopped and restarted and your computer can be disconnected from the network, and Globus will automatically resume the transfer when it's back online.  
 
 With long-running downloads of large files, the [Activity](https://app.globus.org/activity) tab on the central Globus Web App site can be used to monitor the progress of the transfers.
 
-Once the download is complete, the file(s) will be in your home directory when using the MacOS version of Globus Connect or in your Documents folder on Windows. These locations can be further modified (for example, you can choose a larger external drive for the downloaded data). For more on this and other extrra information, see the [detailed download guide](download.md).   
+Once the download is complete, the file(s) will be in your home directory when using the MacOS version of Globus Connect or in your Documents folder on Windows. These locations can be further modified (for example, you can choose a larger external drive for the downloaded data). For more on this and other extra information, see the [detailed download guide](download.md).   
