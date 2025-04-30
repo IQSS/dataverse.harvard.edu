@@ -15,14 +15,13 @@ set -x
 # Processing States:
 # NEW("new"), DONE("done"), SKIP("skip"), PROCESSING("processing"), FAILED("failed");
 # To run this script:
-#   nohup ./process_mdc_logs.sh  > mdc.log 2>&1 &
-#   sudo nohup /usr/local/bin/process_mdc_logs.sh  > mdc.log 2>&1 &
+#   sudo nohup /usr/local/bin/process_mdc_logs.sh  >> /tmp/process_mdc_logs.log 2>&1 &
 # crontab: sudo crontab -l -u root
-# sudo crontab -u root 30 2 * * * /usr/local/bin/process_mdc_logs.sh > /usr/local/bin/process_mdc_logs.log 2>&1
+# sudo crontab -u root 0 * * * * /usr/local/bin/process_mdc_logs.sh >> /tmp/process_mdc_logs.log 2>&1
 declare -a NODE=("app-1" "app-2")
-# change SERVER if running this script on multiple servers
+# change SERVER if running this script on multiple servers. It doesn't need to match the NODE. It just needs to be unique.
 SERVER=app-1
-COUNTERPROCESSORDIR=/usr/local/counter-processor-1.05
+COUNTERPROCESSORDIR=/usr/local/counter-processor-1.06
 TMPDIR=/uploads/mdc_proc
 TMPLOGDIR=$TMPDIR/log
 # Report directory shared by counter and dataverse
@@ -38,6 +37,7 @@ upload_to_hub=False
 clean_for_rerun=False
 platform_name="Harvard Dataverse"
 hub_base_url="https://api.datacite.org"
+cache_size=-64000
 # If uploading to DataCite make sure the hub_api_token is defined in COUNTERPROCESSORDIR/config/secrets.yaml and not hard coded in this script
 
 # Testing with dataverse running in docker
@@ -79,9 +79,10 @@ function process_json_file () {
   state=$(echo "$response" | jq -j '.data.state')
 
   curl -sS -X POST "http://localhost:8080/api/admin/makeDataCount/$year_month/processingState?state=processing&server=$SERVER"
+  echo "${year_month}" > ${TMPDIR}/process_mdc_logs.txt
 
   cd $COUNTERPROCESSORDIR
-  eval "$RunAsCounterProcessorUser YEAR_MONTH=${year_month} SIMULATE_DATE=${sim_date} PLATFORM='${platform_name}' LOG_NAME_PATTERN='${log_name_pattern}' OUTPUT_FILE='${output_report_file}' UPLOAD_TO_HUB='${upload_to_hub}' HUB_BASE_URL='${hub_base_url}' CLEAN_FOR_RERUN='${clean_for_rerun}' ${RunCounterProcessorCommand}"
+  eval "$RunAsCounterProcessorUser YEAR_MONTH=${year_month} SIMULATE_DATE=${sim_date} PLATFORM='${platform_name}' LOG_NAME_PATTERN='${log_name_pattern}' OUTPUT_FILE='${output_report_file}' UPLOAD_TO_HUB='${upload_to_hub}' HUB_BASE_URL='${hub_base_url}' CLEAN_FOR_RERUN='${clean_for_rerun}' PRAGMA_CACHE_SIZE=${cache_size} ${RunCounterProcessorCommand}"
   if [ $? -ne 0 ]; then
       state="failed"
   else
@@ -89,15 +90,32 @@ function process_json_file () {
       if [[ -f "${tmp/datacite_response_body.txt}" ]]; then
           cat ${tmp/datacite_response_body.txt}
       fi
-      report_on_disk=${RPTDIR}/counter_${year_month}.json
-      cp -v ${output_report_file}.json ${report_on_disk}
-      response=$(curl -sS -X POST "http://localhost:8080/api/admin/makeDataCount/addUsageMetricsFromSushiReport?reportOnDisk=${report_on_disk}") 2>/dev/null
-      echo $response
-      if [[ "$(echo "$response" | jq -j '.status')" != "OK" ]]; then
-        state="failed"
-      else
-        state="done"
-        rm -rf ${report_on_disk}
+
+      # handle batches ${output_report_file}.json.{batch}
+      i=0
+      reports_on_disk=()
+      for file in "$output_report_file".json.*; do
+          report_on_disk=${RPTDIR}/counter_${year_month}.json.${i}
+          cp -v ${file} ${report_on_disk}
+          i=$((i+1))
+          reports_on_disk[$i]=${report_on_disk}
+      done
+      printf "%s\n" "${reports_on_disk[@]}"
+
+      for i in "${!reports_on_disk[@]}"; do
+          report_on_disk=${reports_on_disk[$i]}
+          response=$(curl -sS -X POST "http://localhost:8080/api/admin/makeDataCount/addUsageMetricsFromSushiReport?reportOnDisk=${report_on_disk}") 2>/dev/null
+          echo $response
+          if [[ "$(echo "$response" | jq -j '.status')" != "OK" ]]; then
+            state="failed"
+            break
+          else
+            state="done"
+            rm -rf ${report_on_disk}
+          fi
+      done
+      if [[ "${state}" == "done" ]] ; then
+        rm ${TMPDIR}/process_mdc_logs.txt
       fi
   fi
   curl -sS -X POST "http://localhost:8080/api/admin/makeDataCount/$year_month/processingState?state="$state
@@ -106,14 +124,18 @@ function process_json_file () {
 function process_archived_files () {
   eval "mkdir -p ${TMPLOGDIR}"
   eval "chmod -R a+rwx ${TMPLOGDIR}"
+  # Check if we need to continue processing the same year_month
+  continue_year_month=""
+  if [ -f "${TMPDIR}/process_mdc_logs.txt" ]; then
+    continue_year_month=$(head -n 1 ${TMPDIR}/process_mdc_logs.txt)
+  fi
+  echo $continue_year_month
   # Check each node for the newest file. If multiple nodes have the same date file we need to merge the files
   nodeArraylength=${#NODE[@]}
   for (( i=0; i<${nodeArraylength}; i++ ));
   do
     echo "index: $i, value: ${NODE[$i]}"
-    output=$(eval "$ListFromArchiveCmd/${NODE[$i]}/counter")
-    echo $output | sort -r | while read l
-    do
+    for l in $($ListFromArchiveCmd/${NODE[$i]}/ | rev | cut -d' ' -f1 | rev | sort -r) ; do
         year_month=${l:(-11):7}
         echo "Found archive file for "$year_month
         response=$(curl -sS -X GET "http://localhost:8080/api/admin/makeDataCount/$year_month/processingState") 2>/dev/null
@@ -123,6 +145,8 @@ function process_archived_files () {
           echo "Skipping due to state:${state}"
         elif [[ "${stateServer}" != "null" ]] && [[ "${stateServer}" != $SERVER ]]; then
           echo "Skipping due to server:${stateServer}"
+        elif [[ -n "${continue_year_month}" ]] && [[ "${continue_year_month}" != $year_month ]]; then
+          echo "Skipping due to not the year month that was being processed: $year_month != ${continue_year_month}"
         else
           NODE_LOGDIR=${TMPLOGDIR}/${NODE[$i]}_${year_month}
           eval "mkdir -p ${NODE_LOGDIR}"
