@@ -1,4 +1,4 @@
--- Crear campo compuesto 'cafeSourceData' si no existe para cada dataset con datos
+-- Create compound field 'cafeSourceData' for datasets with data
 INSERT INTO datasetfield (datasetversion_id, datasetfieldtype_id)
 SELECT DISTINCT df.datasetversion_id,
        dft_comp.id
@@ -29,7 +29,7 @@ WHERE dft.name IN (
       AND df2.datasetfieldtype_id = dft_comp.id
 );
 
--- Crear compoundvalue si no existe
+-- Create compoundvalue if it doesn't exist
 INSERT INTO datasetfieldcompoundvalue (parentdatasetfield_id, displayorder)
 SELECT df.id, 0
 FROM datasetfield df
@@ -40,7 +40,7 @@ WHERE dft.name = 'cafeSourceData'
     WHERE dfcv.parentdatasetfield_id = df.id
 );
 
--- === cafeSourceDataTitle ===
+-- cafeSourceDataTitle
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT dft_new.id, dfcv.id FROM datasetfield df_comp
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData'
@@ -74,8 +74,8 @@ DELETE FROM datasetfield WHERE datasetfieldtype_id = (
     SELECT id FROM datasetfieldtype WHERE name = 'cafeSourceDataTitle'
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
--- === cafeSourceDataAuthor ===
--- Primero, crear el campo compuesto para cada dataset que tenga valores de autor
+-- cafeSourceDataAuthor
+-- Create compound field for datasets with author values
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT dft_new.id, dfcv.id FROM datasetfield df_comp
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData'
@@ -90,9 +90,8 @@ WHERE EXISTS (SELECT 1 FROM datasetfieldvalue dfv WHERE dfv.datasetfield_id = df
     WHERE df_new2.parentdatasetfieldcompoundvalue_id = dfcv.id
   );
 
--- Luego, insertar los valores de autor
--- Para cada dataset, crear un solo valor concatenado con todos los autores
--- Usando array_agg con ORDER BY para mantener el orden original y punto y coma como separador
+-- Insert concatenated author values with semicolon separator
+-- For each dataset, create a single value concatenated with all authors
 INSERT INTO datasetfieldvalue (datasetfield_id, value)
 SELECT 
     df_new.id, 
@@ -109,7 +108,7 @@ JOIN datasetfieldcompoundvalue dfcv ON df_new.parentdatasetfieldcompoundvalue_id
 JOIN datasetfield df_comp ON dfcv.parentdatasetfield_id = df_comp.id
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData';
 
--- Finalmente, eliminar los valores y campos originales
+-- Remove original author values and fields
 DELETE FROM datasetfieldvalue WHERE datasetfield_id IN (
     SELECT df.id FROM datasetfield df JOIN datasetfieldtype dft ON df.datasetfieldtype_id = dft.id
     WHERE dft.name = 'cafeSourceDataAuthor' AND df.parentdatasetfieldcompoundvalue_id IS NULL
@@ -120,7 +119,7 @@ DELETE FROM datasetfield WHERE datasetfieldtype_id = (
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataInstitution ===
+-- cafeSourceDataInstitution
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT dft_new.id, dfcv.id FROM datasetfield df_comp
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData'
@@ -147,7 +146,7 @@ DELETE FROM datasetfield WHERE datasetfieldtype_id = (
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataVersionNumber ===
+-- cafeSourceDataVersionNumber
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT dft_new.id, dfcv.id FROM datasetfield df_comp
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData'
@@ -174,7 +173,7 @@ DELETE FROM datasetfield WHERE datasetfieldtype_id = (
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataDOIOrURL ===
+-- cafeSourceDataDOIOrURL
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT dft_new.id, dfcv.id FROM datasetfield df_comp
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData'
@@ -201,7 +200,7 @@ DELETE FROM datasetfield WHERE datasetfieldtype_id = (
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataLastModifiedDate ===
+-- cafeSourceDataLastModifiedDate
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT dft_new.id, dfcv.id FROM datasetfield df_comp
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData'
@@ -228,7 +227,7 @@ DELETE FROM datasetfield WHERE datasetfieldtype_id = (
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataDateObtained ===
+-- cafeSourceDataDateObtained
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT dft_new.id, dfcv.id FROM datasetfield df_comp
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData'
@@ -255,8 +254,8 @@ DELETE FROM datasetfield WHERE datasetfieldtype_id = (
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataType ===
--- Crear campos compuestos para cada dataset que tenga valores de tipo
+-- cafeSourceDataType
+-- Create compound fields for datasets with type values
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT DISTINCT dft_new.id, dfcv.id 
 FROM datasetfield df_comp
@@ -275,7 +274,7 @@ AND NOT EXISTS (
     WHERE df_new2.parentdatasetfieldcompoundvalue_id = dfcv.id
 );
 
--- Copiar los valores de vocabulario controlado
+-- Copy controlled vocabulary values
 INSERT INTO datasetfield_controlledvocabularyvalue (datasetfield_id, controlledvocabularyvalues_id)
 SELECT df_new.id, dfcv2.controlledvocabularyvalues_id
 FROM datasetfield df_new
@@ -287,7 +286,7 @@ JOIN datasetfield df_old ON df_old.datasetversion_id = df_comp.datasetversion_id
 JOIN datasetfieldtype dft_old ON df_old.datasetfieldtype_id = dft_old.id AND dft_old.name = 'cafeSourceDataType'
 JOIN datasetfield_controlledvocabularyvalue dfcv2 ON dfcv2.datasetfield_id = df_old.id;
 
--- Eliminar las referencias en datasetfield_controlledvocabularyvalue
+-- Remove original references in datasetfield_controlledvocabularyvalue
 DELETE FROM datasetfield_controlledvocabularyvalue 
 WHERE datasetfield_id IN (
     SELECT df.id FROM datasetfield df 
@@ -295,14 +294,14 @@ WHERE datasetfield_id IN (
     WHERE dft.name = 'cafeSourceDataType' AND df.parentdatasetfieldcompoundvalue_id IS NULL
 );
 
--- Eliminar los campos antiguos
+-- Remove original fields
 DELETE FROM datasetfield 
 WHERE datasetfieldtype_id = (
     SELECT id FROM datasetfieldtype WHERE name = 'cafeSourceDataType'
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataTypeOther ===
+-- cafeSourceDataTypeOther
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT dft_new.id, dfcv.id FROM datasetfield df_comp
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData'
@@ -329,8 +328,8 @@ DELETE FROM datasetfield WHERE datasetfieldtype_id = (
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataSpatialResolution ===
--- Crear campos compuestos para cada dataset que tenga valores de spatial resolution
+-- cafeSourceDataSpatialResolution
+-- Create compound fields for datasets with spatial resolution values
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT DISTINCT dft_new.id, dfcv.id 
 FROM datasetfield df_comp
@@ -355,8 +354,8 @@ AND NOT EXISTS (
     WHERE df_new2.parentdatasetfieldcompoundvalue_id = dfcv.id
 );
 
--- === cafeSourceDataSpatialResolutionUnit ===
--- Crear campos compuestos para cada dataset que tenga valores de spatial resolution unit
+-- cafeSourceDataSpatialResolutionUnit
+-- Create compound fields for datasets with spatial resolution unit values
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT DISTINCT dft_new.id, dfcv.id 
 FROM datasetfield df_comp
@@ -381,8 +380,8 @@ AND NOT EXISTS (
     WHERE df_new2.parentdatasetfieldcompoundvalue_id = dfcv.id
 );
 
--- === cafeSourceDataSpatialResolutionUnitOther ===
--- Crear campos compuestos para cada dataset que tenga valores de spatial resolution unit other
+-- cafeSourceDataSpatialResolutionUnitOther
+-- Create compound fields for datasets with spatial resolution unit other values
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT DISTINCT dft_new.id, dfcv.id 
 FROM datasetfield df_comp
@@ -407,7 +406,7 @@ AND NOT EXISTS (
     WHERE df_new2.parentdatasetfieldcompoundvalue_id = dfcv.id
 );
 
--- Migrar valores de cafeSourceDataSpatialValue a cafeSourceDataSpatialResolution
+-- Migrate spatial value values to spatial resolution
 INSERT INTO datasetfieldvalue (datasetfield_id, value)
 SELECT df_new.id, dfv.value
 FROM datasetfield df_new
@@ -422,8 +421,8 @@ JOIN datasetfield df_sub ON df_sub.parentdatasetfieldcompoundvalue_id = dfcv_par
 JOIN datasetfieldtype dft_sub ON df_sub.datasetfieldtype_id = dft_sub.id AND dft_sub.name = 'cafeSourceDataSpatialValue'
 JOIN datasetfieldvalue dfv ON dfv.datasetfield_id = df_sub.id;
 
--- Migrar valores de cafeSourceDataSpatialResolutionUnit a cafeSourceDataSpatialResolutionUnit
--- Primero los valores de vocabulario controlado
+-- Migrate spatial resolution unit values to spatial resolution
+-- First, copy controlled vocabulary values
 INSERT INTO datasetfield_controlledvocabularyvalue (datasetfield_id, controlledvocabularyvalues_id)
 SELECT df_new.id, dfcv2.controlledvocabularyvalues_id
 FROM datasetfield df_new
@@ -438,7 +437,7 @@ JOIN datasetfield df_sub ON df_sub.parentdatasetfieldcompoundvalue_id = dfcv_par
 JOIN datasetfieldtype dft_sub ON df_sub.datasetfieldtype_id = dft_sub.id AND dft_sub.name = 'cafeSourceDataSpatialResolutionUnit'
 JOIN datasetfield_controlledvocabularyvalue dfcv2 ON dfcv2.datasetfield_id = df_sub.id;
 
--- Luego los valores normales
+-- Then, copy normal values
 INSERT INTO datasetfieldvalue (datasetfield_id, value)
 SELECT df_new.id, dfv.value
 FROM datasetfield df_new
@@ -457,7 +456,7 @@ WHERE NOT EXISTS (
     WHERE dfcv2.datasetfield_id = df_sub.id
 );
 
--- Migrar valores de cafeSourceDataSpatialResolutionUnitOther a cafeSourceDataSpatialResolutionUnitOther
+-- Migrate spatial resolution unit other values to spatial resolution unit other
 INSERT INTO datasetfieldvalue (datasetfield_id, value)
 SELECT df_new.id, dfv.value
 FROM datasetfield df_new
@@ -472,8 +471,7 @@ JOIN datasetfield df_sub ON df_sub.parentdatasetfieldcompoundvalue_id = dfcv_par
 JOIN datasetfieldtype dft_sub ON df_sub.datasetfieldtype_id = dft_sub.id AND dft_sub.name = 'cafeSourceDataSpatialResolutionUnitOther'
 JOIN datasetfieldvalue dfv ON dfv.datasetfield_id = df_sub.id;
 
--- Eliminar los valores y campos antiguos en el orden correcto
--- Primero eliminar las referencias en datasetfield_controlledvocabularyvalue para los subcampos
+-- Remove original references in datasetfield_controlledvocabularyvalue for subfields
 DELETE FROM datasetfield_controlledvocabularyvalue 
 WHERE datasetfield_id IN (
     SELECT df.id FROM datasetfield df 
@@ -487,7 +485,7 @@ WHERE datasetfield_id IN (
     )
 );
 
--- Luego eliminar los valores en datasetfieldvalue para los subcampos
+-- Remove original values in datasetfieldvalue for subfields
 DELETE FROM datasetfieldvalue 
 WHERE datasetfield_id IN (
     SELECT df.id FROM datasetfield df 
@@ -501,7 +499,7 @@ WHERE datasetfield_id IN (
     )
 );
 
--- Eliminar las referencias en datasetfieldcompoundvalue para los subcampos
+-- Remove references in datasetfieldcompoundvalue for subfields
 DELETE FROM datasetfieldcompoundvalue
 WHERE parentdatasetfield_id IN (
     SELECT df.id FROM datasetfield df 
@@ -515,7 +513,7 @@ WHERE parentdatasetfield_id IN (
     )
 );
 
--- Finalmente eliminar los campos subcampos
+-- Remove subfields
 DELETE FROM datasetfield 
 WHERE datasetfieldtype_id IN (
     SELECT id FROM datasetfieldtype 
@@ -528,7 +526,7 @@ AND parentdatasetfieldcompoundvalue_id IN (
     WHERE dft_parent.name = 'cafeSourceDataSpatialResolution'
 );
 
--- Eliminar las referencias en datasetfieldcompoundvalue para el campo padre
+-- Remove references in datasetfieldcompoundvalue for parent field
 DELETE FROM datasetfieldcompoundvalue
 WHERE parentdatasetfield_id IN (
     SELECT df.id FROM datasetfield df 
@@ -537,15 +535,15 @@ WHERE parentdatasetfield_id IN (
     AND df.parentdatasetfieldcompoundvalue_id IS NULL
 );
 
--- Finalmente eliminar el campo padre
+-- Remove parent field
 DELETE FROM datasetfield 
 WHERE datasetfieldtype_id = (
     SELECT id FROM datasetfieldtype WHERE name = 'cafeSourceDataSpatialResolution'
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataTimestep ===
--- Crear campos compuestos para cada dataset que tenga valores de timestep
+-- cafeSourceDataTimestep
+-- Create compound fields for datasets with timestep values
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT DISTINCT dft_new.id, dfcv.id 
 FROM datasetfield df_comp
@@ -564,7 +562,7 @@ AND NOT EXISTS (
     WHERE df_new2.parentdatasetfieldcompoundvalue_id = dfcv.id
 );
 
--- Copiar los valores de vocabulario controlado
+-- Copy controlled vocabulary values
 INSERT INTO datasetfield_controlledvocabularyvalue (datasetfield_id, controlledvocabularyvalues_id)
 SELECT df_new.id, dfcv2.controlledvocabularyvalues_id
 FROM datasetfield df_new
@@ -576,7 +574,7 @@ JOIN datasetfield df_old ON df_old.datasetversion_id = df_comp.datasetversion_id
 JOIN datasetfieldtype dft_old ON df_old.datasetfieldtype_id = dft_old.id AND dft_old.name = 'cafeSourceDataTimestep'
 JOIN datasetfield_controlledvocabularyvalue dfcv2 ON dfcv2.datasetfield_id = df_old.id;
 
--- Eliminar las referencias en datasetfield_controlledvocabularyvalue
+-- Remove original references in datasetfield_controlledvocabularyvalue
 DELETE FROM datasetfield_controlledvocabularyvalue 
 WHERE datasetfield_id IN (
     SELECT df.id FROM datasetfield df 
@@ -584,14 +582,14 @@ WHERE datasetfield_id IN (
     WHERE dft.name = 'cafeSourceDataTimestep' AND df.parentdatasetfieldcompoundvalue_id IS NULL
 );
 
--- Eliminar los campos antiguos
+-- Remove original fields
 DELETE FROM datasetfield 
 WHERE datasetfieldtype_id = (
     SELECT id FROM datasetfieldtype WHERE name = 'cafeSourceDataTimestep'
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataTimestepOther ===
+-- cafeSourceDataTimestepOther
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT dft_new.id, dfcv.id FROM datasetfield df_comp
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData'
@@ -618,7 +616,7 @@ DELETE FROM datasetfield WHERE datasetfieldtype_id = (
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataAttribution ===
+-- cafeSourceDataAttribution
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT dft_new.id, dfcv.id FROM datasetfield df_comp
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData'
@@ -645,7 +643,7 @@ DELETE FROM datasetfield WHERE datasetfieldtype_id = (
 ) AND parentdatasetfieldcompoundvalue_id IS NULL;
 
 
--- === cafeSourceDataDisclaimer ===
+-- cafeSourceDataDisclaimer
 INSERT INTO datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id)
 SELECT dft_new.id, dfcv.id FROM datasetfield df_comp
 JOIN datasetfieldtype dft_comp ON df_comp.datasetfieldtype_id = dft_comp.id AND dft_comp.name = 'cafeSourceData'
