@@ -2,23 +2,23 @@
 	customCAFEDataSources	CAFE	Metadata About Data Sources													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
 	cafeDerivedFromExistingDataset	Derived from Another Dataset	Indicates if this Dataset is derived from another dataset, such as a climate model		text	0		FALSE	TRUE	FALSE	TRUE	TRUE	TRUE		customCAFEDataSources	
-	cafeSourceDataTitle	Source Dataset Title	The name or title of the dataset from which this Dataset is derived		text	1		TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataAuthor	Source Dataset Author	The author of the source dataset		text	2		TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataInstitution	Source Dataset Institution	The institution or organization at which the source dataset was created, e.g. NASA		text	3		TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataVersionNumber	Source Dataset Version Number	The version number of the source data		text	4		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataDOIOrURL	Source Dataset DOI or URL	The unique identifier or web URL to the source dataset	https://	url	5	<a href="#VALUE" target="_blank">#VALUE</a>	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataLastModifiedDate	Source Dataset Last Modified Date	The date on which the source dataset was last modified, as used in the derivation of this Dataset	YYYY-MM-DD	date	6		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataDateObtained	Source Dataset Date Obtained	The date when this Dataset's depositor obtained the source dataset	YYYY-MM-DD	date	7		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataType	Source Dataset Type	A broad categorization of the source data by method of data creation		text	8		TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataTypeOther	Source Dataset Other Type	A broad categorization of the source data by method of data creation		text	9		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataSpatialResolution	Source Dataset Spatial Resolution	The spatial resolution of the raster data		none	10	;	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataSpatialValue	Value	The horizontal grid spacing of the source data as a number with no unit		float	11	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	cafeSourceDataSpatialResolution	customCAFEDataSources	
-	cafeSourceDataSpatialResolutionUnit	Unit	The unit of the Spatial Resolution		text	12	#NAME: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	cafeSourceDataSpatialResolution	customCAFEDataSources	
-	cafeSourceDataSpatialResolutionUnitOther	Other Unit	The unit of the Spatial Resolution		text	13	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceDataSpatialResolution	customCAFEDataSources	
-	cafeSourceDataTimestep	Source Dataset Timestep	The temporal frequency of data in the source dataset		text	14		TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataTimestepOther	Other Source Dataset Timestep	The temporal frequency of data in the source dataset		text	15		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataAttribution	Source Dataset Attribution	Bibliographic references to the source data, which are typically included in the terms of use		textbox	16		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
-	cafeSourceDataDisclaimer	Source Dataset Disclaimer	Disclaimer text provided by the source dataset creators		textbox	17		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCAFEDataSources	
+	cafeSourceData	Source Dataset	Information about the source dataset		none	1	;	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		customCAFEDataSources	
+	cafeSourceDataTitle	Source Dataset Title	The name or title of the dataset from which this Dataset is derived		text	2	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataAuthor	Source Dataset Author	The author of the source dataset		text	3	#NAME: #VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataInstitution	Source Dataset Institution	The institution or organization at which the source dataset was created		text	4	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataVersionNumber	Source Dataset Version Number	The version number of the source data		text	5	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataDOIOrURL	Source Dataset DOI or URL	The unique identifier or web URL to the source dataset	https://	url	6	<a href="#VALUE" target="_blank">#VALUE</a>	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataLastModifiedDate	Source Dataset Last Modified Date	The date on which the source dataset was last modified	YYYY-MM-DD	date	7	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataDateObtained	Source Dataset Date Obtained	The date when this Dataset's depositor obtained the source dataset	YYYY-MM-DD	date	8	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataType	Source Dataset Type	A broad categorization of the source data by method of data creation		text	9	#NAME: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataTypeOther	Source Dataset Other Type	A broad categorization of the source data by method of data creation		text	10	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataSpatialResolution	Source Dataset Spatial Resolution	The horizontal grid spacing of the source data as a number with no unit		float	11	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataSpatialResolutionUnit	Source Dataset Spatial Resolution Unit	The unit of the Spatial Resolution		text	12	#NAME: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataSpatialResolutionUnitOther	Source Dataset Spatial Resolution Other Unit	The unit of the Spatial Resolution		text	13	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataTimestep	Source Dataset Timestep	The temporal frequency of data in the source dataset		text	14	#NAME: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataTimestepOther	Other Source Dataset Timestep	The temporal frequency of data in the source dataset		text	15	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataAttribution	Source Dataset Attribution	Bibliographic references to the source data, which are typically included in the terms of use		textbox	16	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
+	cafeSourceDataDisclaimer	Source Dataset Disclaimer	Disclaimer text provided by the source dataset creators		textbox	17	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	cafeSourceData	customCAFEDataSources	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	cafeDerivedFromExistingDataset	Yes		0												
 	cafeDerivedFromExistingDataset	No		1												
