@@ -18,6 +18,10 @@ set -x
 #   sudo nohup /usr/local/bin/process_mdc_logs.sh  >> /tmp/process_mdc_logs.log 2>&1 &
 # crontab: sudo crontab -l -u root
 # sudo crontab -u root 0 * * * * /usr/local/bin/process_mdc_logs.sh >> /tmp/process_mdc_logs.log 2>&1
+
+# Used to rotate the log file. Must match the log file name in the crontab
+LOGFILE=/tmp/process_mdc_logs.log
+
 declare -a NODE=("app-1" "app-2")
 # change SERVER if running this script on multiple servers. It doesn't need to match the NODE. It just needs to be unique.
 SERVER=app-1
@@ -204,6 +208,10 @@ function process_archived_files () {
 
     # After processing is done delete the log files from the log directory
     eval "rm -rf ${TMPLOGDIR}/counter_*.log"
+    # Rotate the log file
+    if [ -f "$LOGFILE" ]; then
+        eval "mv $LOGFILE $LOGFILE.$year_month"
+    fi
   fi
 }
 
