@@ -219,6 +219,8 @@ function process_archived_files () {
 # see if this is already running
 if eval "ps aux | grep -v 'grep' | grep '${RunCounterProcessorCommand}'"; then
   echo "Process is already running. Exiting!"
+elif eval "ps aux | grep -v 'grep' | grep 'makeDataCount/addUsageMetricsFromSushiReport'"; then
+  echo "Uploading to Dataverse is already running. Exiting!"
 else
   process_archived_files
 fi
