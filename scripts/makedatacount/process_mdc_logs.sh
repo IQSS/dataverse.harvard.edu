@@ -210,7 +210,7 @@ function process_archived_files () {
     eval "rm -rf ${TMPLOGDIR}/counter_*.log"
     # Rotate the log file
     if [ -f "$LOGFILE" ]; then
-        eval "mv $LOGFILE $LOGFILE.$year_month"
+        eval "mv -f $LOGFILE $LOGFILE.$year_month"
     fi
   fi
 }
