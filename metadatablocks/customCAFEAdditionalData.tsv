@@ -1,0 +1,286 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	AdditionalMetadataAboutDataset	CAFE	Additional Metadata About Dataset													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	cafeDatasetTerms	CCH Terms	Terms developed by NIEHS that are applicable to this dataset		text	0	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		AdditionalMetadataAboutDataset
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder
+	cafeDatasetTerms	Acclimatization		0
+	cafeDatasetTerms	Adaptation		1
+	cafeDatasetTerms	Adaptation Research		2
+	cafeDatasetTerms	Adaptive Capacity		3
+	cafeDatasetTerms	Aeroallergens		4
+	cafeDatasetTerms	Air Pollution		5
+	cafeDatasetTerms	Airborne Disease		6
+	cafeDatasetTerms	Algae		7
+	cafeDatasetTerms	Allergy		8
+	cafeDatasetTerms	Animal Reservoir		9
+	cafeDatasetTerms	Anthropogenic Emissions		10
+	cafeDatasetTerms	Anxiety		11
+	cafeDatasetTerms	Applied Research		12
+	cafeDatasetTerms	Asthma		13
+	cafeDatasetTerms	Atmospheric Aerosol		14
+	cafeDatasetTerms	Bacteria		15
+	cafeDatasetTerms	Basic Research		16
+	cafeDatasetTerms	Behavioral and Social Sciences Research		17
+	cafeDatasetTerms	Behavioral Health		18
+	cafeDatasetTerms	Behavioral Health Equity		19
+	cafeDatasetTerms	Biodiversity		20
+	cafeDatasetTerms	Birth Outcome		21
+	cafeDatasetTerms	Black Carbon		22
+	cafeDatasetTerms	Cancer		23
+	cafeDatasetTerms	Capacity Building		24
+	cafeDatasetTerms	Carbon Dioxide (CO2)		25
+	cafeDatasetTerms	Carbon Monoxide (CO)		26
+	cafeDatasetTerms	Carbon Neutral		27
+	cafeDatasetTerms	Cardiovascular		28
+	cafeDatasetTerms	Chronic Obstructive Pulmonary Disease (COPD)		29
+	cafeDatasetTerms	Citizen Science		30
+	cafeDatasetTerms	Climate		31
+	cafeDatasetTerms	Climate Adaptation		32
+	cafeDatasetTerms	Climate and Health Epidemiology		33
+	cafeDatasetTerms	Climate and Health Outcome		34
+	cafeDatasetTerms	Climate Change		35
+	cafeDatasetTerms	Climate Change and Health Co-Benefit		36
+	cafeDatasetTerms	Climate Change and Socioeconomic Scenarios		37
+	cafeDatasetTerms	Climate Equity		38
+	cafeDatasetTerms	Climate Indicator		39
+	cafeDatasetTerms	Climate Justice		40
+	cafeDatasetTerms	Climate Migration		41
+	cafeDatasetTerms	Climate Model		42
+	cafeDatasetTerms	Climate Preparedness		43
+	cafeDatasetTerms	Climate Risk		44
+	cafeDatasetTerms	Climate Scenario		45
+	cafeDatasetTerms	Climate Sensitive Diseases (CSD)		46
+	cafeDatasetTerms	Climate Stressor		47
+	cafeDatasetTerms	Climate Uncertainty		48
+	cafeDatasetTerms	Climate Variability		49
+	cafeDatasetTerms	Co-Benefit		50
+	cafeDatasetTerms	Co-infection		51
+	cafeDatasetTerms	Coastal Ocean		52
+	cafeDatasetTerms	Cognitive Disorder		53
+	cafeDatasetTerms	Cohort		54
+	cafeDatasetTerms	Cold Wave		55
+	cafeDatasetTerms	Communication Research		56
+	cafeDatasetTerms	Community Engagement		57
+	cafeDatasetTerms	Comorbidity		58
+	cafeDatasetTerms	Compound Event		59
+	cafeDatasetTerms	Conceptual Site Model		60
+	cafeDatasetTerms	Cost Prediction		61
+	cafeDatasetTerms	Crowdsourcing		62
+	cafeDatasetTerms	Cryptosporidium		63
+	cafeDatasetTerms	Cumulative Health Effects		64
+	cafeDatasetTerms	Cumulative Risk		65
+	cafeDatasetTerms	Cyanobacteria		66
+	cafeDatasetTerms	Data Integration		67
+	cafeDatasetTerms	Degree Days		68
+	cafeDatasetTerms	Demographic		69
+	cafeDatasetTerms	Dengue Fever		70
+	cafeDatasetTerms	Dermatological Outcome		71
+	cafeDatasetTerms	Desert		72
+	cafeDatasetTerms	Developmental Outcome		73
+	cafeDatasetTerms	Diabetes		74
+	cafeDatasetTerms	Disaster		75
+	cafeDatasetTerms	Disaster Equity		76
+	cafeDatasetTerms	Disaster Preparedness		77
+	cafeDatasetTerms	Disaster Recovery		78
+	cafeDatasetTerms	Disaster Research Response		79
+	cafeDatasetTerms	Disaster Response		80
+	cafeDatasetTerms	Disaster Risk Reduction		81
+	cafeDatasetTerms	Disease Burden		82
+	cafeDatasetTerms	Dissemination Science		83
+	cafeDatasetTerms	Downscaling		84
+	cafeDatasetTerms	Drought		85
+	cafeDatasetTerms	Dust Storm		86
+	cafeDatasetTerms	Early Warning System		87
+	cafeDatasetTerms	Economic Impact Research		88
+	cafeDatasetTerms	Ecosystem		89
+	cafeDatasetTerms	Ecosystem Services		90
+	cafeDatasetTerms	Ecosystem-Based Adaptation		91
+	cafeDatasetTerms	El Nino Southern Oscillation (ENSO)		92
+	cafeDatasetTerms	Electrolyte Imbalance		93
+	cafeDatasetTerms	Emergency		94
+	cafeDatasetTerms	Emissions Scenario		95
+	cafeDatasetTerms	Endemic		96
+	cafeDatasetTerms	Environment		97
+	cafeDatasetTerms	Environmental Health		98
+	cafeDatasetTerms	Environmental Justice		99
+	cafeDatasetTerms	Environmental Justice Index		100
+	cafeDatasetTerms	Environmental Quality Index (EQI)		101
+	cafeDatasetTerms	Epidemiology		102
+	cafeDatasetTerms	Eutrophication		103
+	cafeDatasetTerms	Exposure		104
+	cafeDatasetTerms	Exposure Assessment		105
+	cafeDatasetTerms	Exposure Change Prediction		106
+	cafeDatasetTerms	Exposure Pathway		107
+	cafeDatasetTerms	Extreme Temperatures		108
+	cafeDatasetTerms	Extreme Weather Events		109
+	cafeDatasetTerms	Flood		110
+	cafeDatasetTerms	Food Quality		111
+	cafeDatasetTerms	Food Security		112
+	cafeDatasetTerms	Foodborne Illness/Disease		113
+	cafeDatasetTerms	Forest		114
+	cafeDatasetTerms	Fossil Fuels		115
+	cafeDatasetTerms	Framework		116
+	cafeDatasetTerms	Freshwater		117
+	cafeDatasetTerms	Fungi		118
+	cafeDatasetTerms	Gastrointestinal System		119
+	cafeDatasetTerms	Glacier Melt/Snow Melt		120
+	cafeDatasetTerms	Global Climate Models (GCM)		121
+	cafeDatasetTerms	Global Health		122
+	cafeDatasetTerms	Global Mean Surface Temperature		123
+	cafeDatasetTerms	Global Warming		124
+	cafeDatasetTerms	Grassland		125
+	cafeDatasetTerms	Green Climate Fund		126
+	cafeDatasetTerms	Greenhouse Effect		127
+	cafeDatasetTerms	Greenhouse Gas		128
+	cafeDatasetTerms	Growing Degree Days		129
+	cafeDatasetTerms	Harmful Algal Bloom (HAB)		130
+	cafeDatasetTerms	Health		131
+	cafeDatasetTerms	Health Disparity		132
+	cafeDatasetTerms	Health Effects Research		133
+	cafeDatasetTerms	Health Equity		134
+	cafeDatasetTerms	Health Hazard		135
+	cafeDatasetTerms	Health Services Research		136
+	cafeDatasetTerms	Health Systems Research		137
+	cafeDatasetTerms	Healthcare Sector		138
+	cafeDatasetTerms	Healthcare Services		139
+	cafeDatasetTerms	Heat Stress/Heat Related Illness		140
+	cafeDatasetTerms	Heat Wave		141
+	cafeDatasetTerms	Hepatic System		142
+	cafeDatasetTerms	Historical Trauma		143
+	cafeDatasetTerms	Hypertension		144
+	cafeDatasetTerms	Hyperthermia		145
+	cafeDatasetTerms	Hypothermia		146
+	cafeDatasetTerms	Implementation Science		147
+	cafeDatasetTerms	Incidence		148
+	cafeDatasetTerms	Indigenous Peoples		149
+	cafeDatasetTerms	Indoor Environment		150
+	cafeDatasetTerms	Infectious Disease		151
+	cafeDatasetTerms	Infrastructure		152
+	cafeDatasetTerms	Intergovernmental Panel on Climate Change (IPCC)		153
+	cafeDatasetTerms	Intervention Research		154
+	cafeDatasetTerms	Island		155
+	cafeDatasetTerms	Land Cover		156
+	cafeDatasetTerms	Land Use		157
+	cafeDatasetTerms	Landslide		158
+	cafeDatasetTerms	Law		159
+	cafeDatasetTerms	Lived Experience		160
+	cafeDatasetTerms	Loss and Damage		161
+	cafeDatasetTerms	Lyme Disease		162
+	cafeDatasetTerms	Maladaptation		163
+	cafeDatasetTerms	Malnutrition		164
+	cafeDatasetTerms	Mechanistic Study		165
+	cafeDatasetTerms	Medical Visit		166
+	cafeDatasetTerms	Mental Health		167
+	cafeDatasetTerms	Mental Illness, Mental Disorder		168
+	cafeDatasetTerms	Meteorological Factor		169
+	cafeDatasetTerms	Mitigation		170
+	cafeDatasetTerms	Model Timescale		171
+	cafeDatasetTerms	Monsoon		172
+	cafeDatasetTerms	Morbidity		173
+	cafeDatasetTerms	Mortality		174
+	cafeDatasetTerms	Mountain		175
+	cafeDatasetTerms	Multidisciplinary Research		176
+	cafeDatasetTerms	Nationally Determined Contributions (NDCs)		177
+	cafeDatasetTerms	Natural Experiment		178
+	cafeDatasetTerms	Nature-based Solutions		179
+	cafeDatasetTerms	Nervous System		180
+	cafeDatasetTerms	Neurological Disorder		181
+	cafeDatasetTerms	Noncommunicable Diseases (NCDs)		182
+	cafeDatasetTerms	Normalized Difference Vegetation Index		183
+	cafeDatasetTerms	Nutritional Security		184
+	cafeDatasetTerms	Ocean Acidification		185
+	cafeDatasetTerms	One Health		186
+	cafeDatasetTerms	Ozone (O3)		187
+	cafeDatasetTerms	Parasite		188
+	cafeDatasetTerms	Particulate Matter		189
+	cafeDatasetTerms	Pathogen		190
+	cafeDatasetTerms	Patient Registry		191
+	cafeDatasetTerms	Permafrost		192
+	cafeDatasetTerms	Physical Injury		193
+	cafeDatasetTerms	Planned Relocation		194
+	cafeDatasetTerms	Polar		195
+	cafeDatasetTerms	Policy		196
+	cafeDatasetTerms	Populations of Concern		197
+	cafeDatasetTerms	Post-traumatic Stress Disorder (PTSD)		198
+	cafeDatasetTerms	Precipitation		199
+	cafeDatasetTerms	Predictive Modeling		200
+	cafeDatasetTerms	Prevalence		201
+	cafeDatasetTerms	Projection		202
+	cafeDatasetTerms	Psychological Disorder		203
+	cafeDatasetTerms	Pubertal Timing		204
+	cafeDatasetTerms	Public Health		205
+	cafeDatasetTerms	Public Health Intervention		206
+	cafeDatasetTerms	Radiative Forcing		207
+	cafeDatasetTerms	Rainforest		208
+	cafeDatasetTerms	Recovery		209
+	cafeDatasetTerms	Redlining		210
+	cafeDatasetTerms	Reference Scenario		211
+	cafeDatasetTerms	Regulation		212
+	cafeDatasetTerms	Remote Sensing		213
+	cafeDatasetTerms	Renal System		214
+	cafeDatasetTerms	Renewable Energy		215
+	cafeDatasetTerms	Representative Concentration Pathways (RCPs)		216
+	cafeDatasetTerms	Reproductive System		217
+	cafeDatasetTerms	Research Approach		218
+	cafeDatasetTerms	Research Gap		219
+	cafeDatasetTerms	Research Methodology		220
+	cafeDatasetTerms	Resilience		221
+	cafeDatasetTerms	Respiratory Disease		222
+	cafeDatasetTerms	Respiratory System		223
+	cafeDatasetTerms	Risk		224
+	cafeDatasetTerms	Risk Assessment		225
+	cafeDatasetTerms	Risk Management		226
+	cafeDatasetTerms	Risk Perception		227
+	cafeDatasetTerms	Rural		228
+	cafeDatasetTerms	Salmonellosis		229
+	cafeDatasetTerms	Scenario		230
+	cafeDatasetTerms	Sea Level Rise		231
+	cafeDatasetTerms	Seasonality		232
+	cafeDatasetTerms	Sensitivity		233
+	cafeDatasetTerms	Serious Mental Illness (SMI)		234
+	cafeDatasetTerms	Shared Socioeconomic Pathway (SSP)		235
+	cafeDatasetTerms	Short Lived Climate Pollutants (SLCP)		236
+	cafeDatasetTerms	Social Determinants of Health (SDOH)		237
+	cafeDatasetTerms	Social Stratification		238
+	cafeDatasetTerms	Social Vulnerability Index		239
+	cafeDatasetTerms	Sociodemographic Vulnerability		240
+	cafeDatasetTerms	Socioeconomic Status (SES)		241
+	cafeDatasetTerms	Solar Radiation		242
+	cafeDatasetTerms	Special Report on Emissions Scenarios (SRES)		243
+	cafeDatasetTerms	Storm Surge		244
+	cafeDatasetTerms	Substance Use Disorders		245
+	cafeDatasetTerms	Suburban		246
+	cafeDatasetTerms	Suicide		247
+	cafeDatasetTerms	Surveillance		248
+	cafeDatasetTerms	Surveillance System		249
+	cafeDatasetTerms	Temperate		250
+	cafeDatasetTerms	Thermoregulation		251
+	cafeDatasetTerms	Toxin		252
+	cafeDatasetTerms	Training		253
+	cafeDatasetTerms	Transdisciplinary Research		254
+	cafeDatasetTerms	Trauma		255
+	cafeDatasetTerms	Trauma-Informed Care (TIC)		256
+	cafeDatasetTerms	Treaty		257
+	cafeDatasetTerms	Tropical		258
+	cafeDatasetTerms	Tropical Cyclone/Hurricane		259
+	cafeDatasetTerms	Tundra		260
+	cafeDatasetTerms	United Nations Framework Convention on Climate Change (UNFCCC)		261
+	cafeDatasetTerms	Urban		262
+	cafeDatasetTerms	Urban Heat Island Effect		263
+	cafeDatasetTerms	Valley		264
+	cafeDatasetTerms	Vector		265
+	cafeDatasetTerms	Vector-borne Disease		266
+	cafeDatasetTerms	Virus		267
+	cafeDatasetTerms	Vulnerability		268
+	cafeDatasetTerms	Vulnerability Assessment		269
+	cafeDatasetTerms	Water Quality		270
+	cafeDatasetTerms	Water Security		271
+	cafeDatasetTerms	Water-borne Illness		272
+	cafeDatasetTerms	Watershed		273
+	cafeDatasetTerms	Weather		274
+	cafeDatasetTerms	Well-Being		275
+	cafeDatasetTerms	West Nile Virus		276
+	cafeDatasetTerms	Wet Bulb Globe Temperature		277
+	cafeDatasetTerms	Wetland		278
+	cafeDatasetTerms	Wildfire		279
+	cafeDatasetTerms	Zoonotic Disease		280

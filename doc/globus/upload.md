@@ -28,25 +28,29 @@ It is however possible that the data you are depositing is already accessible un
 
 [Globus Connect Personal](https://www.globus.org/globus-connect-personal) is a free client offered by Globus. Linux, Mac and Windows versions are available. Once installed on your computer, Globus Connect Personal will make your local files visible to the Globus network as a collection that can be used as the data transfer source. It will be limited initially to your home directory, but any other directory or volume local to your system can be added. "Local" in this context means files directly stored on your laptop, but also any external hard drives or any remote volumes (NFS, etc.) mounted over the network. 
 
-When you start Connect Personal, you will be asked to log in using your Globus account. Verify that your new collection is properly set up by clicking the "Web: Collection Details" in the menu (MacOS version shown):
+In order to complete the installation of Connect Personal, you will be asked to log in using your Globus account.
+
+You can verify that your new collection is properly set up by clicking the "Web: Collection Details" in the menu (MacOS version shown):
 
 ![Globus Connect Personal Collection View](GlobusPersonalConnect.png)
 
-This should take you to the Globus Web App page, confirming that your personal collection is now part of the Globus federation:
+This should take you to the Globus main Web App page, confirming that your personal collection is now part of the Globus federation:
 
 ![Globus Web App Collection View](GlobusWebAppCollection.png)
+
+**Note that the above is only suggested as a way to verify that Connect Personal is working properly. You will not be using the Web App at globus.org to upload the data, all the transfers will have to be initiated from the Dataverse pages.**
 
 If necessary, add any extra folders containing the data you are depositing to the collection in the _Access_ panel under _Preferences_. Since you are transferring data _from_ your collection, it is safe to leave the "Write Access" box unchecked. The "Shareable" box does not need to be checked either, unless you actually need to make your personal collection accessible to other Globus users.
 
 ## 3. dataverse-globus App by Borealis/GDCC
 
-The upload process relies on an extra software component, [dataverse-globus](https://github.com/gdcc/dataverse-globus), a web tool that serves as an interface between Dataverse and Globus. It was originally developed by Victoria Lubitch at Borealis (formerly Scholars Portal), the Canadian Dataverse Repository project. Clicking the "Upload with Globus" on the _Upload Files_ page in the Dataverse UI will redirect you to the dataverse-globus app in a new tab:
+The upload process relies on an extra user interface component, "dataverse-globus", as an add-on to the Dataverse pages you may be familiar with already. Clicking the "Upload with Globus" on the _Upload Files_ page in the Dataverse UI will redirect you to dataverse-globus in a new tab:
 
 ![Upload with Globus Button](GlobusUploadButton.png)
 
 (If you are not seeing the "Upload with Globus" button above on the uploads page, that likely means that your Dataverse Collection has not yet been configured to use NESE storage - please contact support to have that straightened out)
 
-The dataverse-globus app will in turn redirect you to a Globus login page (make sure to use an account that has read access to your source collection, in case you have more than one):
+Unless you are logged in already, you will be redirected to the Globus login page in the "dataverse-globus" tab (make sure you are using the same account that you used to configure your instance of Globus Connect Personal):
 
 ![Dataverse Globus App Login](DataverseGlobusAppLogin.png)
 
@@ -57,6 +61,8 @@ The dataverse-globus app will inform you if Globus Connect isn't installed or pr
 Otherwise the app will show two panels, source on the left, and the destination on the right: 
 
 ![Dataverse Globus App Upload View](DataverseGlobusAppUpload.png)
+
+[dataverse-globus](https://github.com/gdcc/dataverse-globus) was originally developed by Victoria Lubitch at Borealis (formerly Scholars Portal), the Canadian Dataverse Repository project. **Note that this add-on does NOT need to be installed locally by the user; it is an additional server component on the Dataverse side.** 
 
 ## 4. Initiating Globus Upload
 

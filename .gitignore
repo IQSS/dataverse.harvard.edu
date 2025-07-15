@@ -1,4 +1,19 @@
-# do not track IntelliJ IDEA files
+# do not track IntelliJ IDEA files #
+####################################
 .idea
 **/*.iml
 /bin/
+
+# Logs and databases #
+######################
+docker-dev-volumes/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+
+# ignore editor files #
+#######################
+.idea
