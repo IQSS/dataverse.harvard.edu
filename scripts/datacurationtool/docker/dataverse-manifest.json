@@ -17,20 +17,26 @@
         "datasetPid": "{datasetPid}"
       },
       {
-        "dvLocale": "{localeCode}"
+        "locale": "{localeCode}"
       }
     ]
   },
   "allowedApiCalls": [
     {
-      "name": "retrieveDataFile",
+      "name": "retrieveDataFileDDI",
       "httpMethod": "GET",
       "urlTemplate": "/api/v1/access/datafile/{fileId}/metadata/ddi",
       "timeOut": 270
     },
     {
+      "name": "retrieveDataFile",
+      "httpMethod": "GET",
+      "urlTemplate": "/api/v1/access/datafile/{fileId}",
+      "timeOut": 270
+    },
+    {
       "name": "uploadDataFile",
-      "httpMethod": "POST",
+      "httpMethod": "PUT",
       "urlTemplate": "/api/v1/edit/{fileId}",
       "timeOut": 270
     }
