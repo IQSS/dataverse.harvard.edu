@@ -1,0 +1,44 @@
+{
+  "displayName": "Data Curation Tool",
+  "description": "Data Curation Tool for curation of variables",
+  "scope": "file",
+  "type": "configure",
+  "contentType": "text/tab-separated-values",
+  "toolUrl": "https://demo.dataverse.org/datacuration/",
+  "toolParameters": {
+    "queryParameters": [
+      {
+        "fileId": "{fileId}"
+      },
+      {
+        "fileMetadataId": "{fileMetadataId}"
+      },
+      {
+        "datasetPid": "{datasetPid}"
+      },
+      {
+        "locale": "{localeCode}"
+      }
+    ]
+  },
+  "allowedApiCalls": [
+    {
+      "name": "retrieveDataFileDDI",
+      "httpMethod": "GET",
+      "urlTemplate": "/api/v1/access/datafile/{fileId}/metadata/ddi",
+      "timeOut": 270
+    },
+    {
+      "name": "retrieveDataFile",
+      "httpMethod": "GET",
+      "urlTemplate": "/api/v1/access/datafile/{fileId}",
+      "timeOut": 270
+    },
+    {
+      "name": "uploadDataFile",
+      "httpMethod": "PUT",
+      "urlTemplate": "/api/v1/edit/{fileId}",
+      "timeOut": 270
+    }
+  ]
+}

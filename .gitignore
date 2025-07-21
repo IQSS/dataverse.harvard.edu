@@ -1,3 +1,9 @@
+# do not track IntelliJ IDEA files #
+####################################
+.idea
+**/*.iml
+/bin/
+
 # Logs and databases #
 ######################
 docker-dev-volumes/
