@@ -1,5 +1,7 @@
 # Downloading data via Globus at Harvard Dataverse Archive.
 
+## **ATTENTION:** Please **make sure you read** the simplified, [QUICK START](download-quickstart.md) instruction first! This longer version was our first attempt to describe the new Globus workflow. While it does contain some additional bits of information that you may find useful, we know of a few cases where users were confused by the extra details. Note specifically that you do NOT need to install angular and build the "dataverse-globus" webapp locally. 
+
 ## 1. Summary/Introduction
 
 This is a new and experimental service offered by Harvard Dataverse in collaboration with [Mass. Open Cloud](https://massopen.cloud/) (MOC) and [Northeast Storage Exchange](https://nese.mghpcc.org/) (NESE) for researchers looking to deposit large amounts (TBs) of data (aka "Big Data"). It combines the curation, publishing and access control capabilities of Dataverse with the existing Big Data storage infrastructure at NESE.
