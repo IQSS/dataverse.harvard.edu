@@ -1,0 +1,3 @@
+This directory contains external tool manifest files for the integration with Open OnDemand, which is orchestrated with an app call [OnDemand Loop](https://github.com/IQSS/ondemand-loop), which is [described](https://github.com/IQSS/dataverse/pull/11769) in the guides.
+
+Unlike most external tools that launch you right into the tool, this one sends you to a landing page to explain additional requirements (such as being on the VPN) before you continue. We have [created](https://github.com/IQSS/ondemand-loop/issues/334) and [deployed](https://github.com/IQSS/dataverse.harvard.edu/issues/390) a dedicated landing page for the demo server and expect a different one for production (with more Harvard Dataverse branding).
