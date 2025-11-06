@@ -1,0 +1,335 @@
+AUTHENTICATE PUBKEY:300:0.NA/10904
+/Users/stevenwinship/handle-9.3.2/bin/admpriv.bin|Kirkland
+
+MODIFY 10904/10006
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10006
+
+MODIFY 10904/10013
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10013
+
+MODIFY 10904/10016
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10016
+
+MODIFY 10904/10018
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10018
+
+MODIFY 10904/10019
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10019
+
+MODIFY 10904/10020
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10020
+
+MODIFY 10904/10021
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10021
+
+MODIFY 10904/10022
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10022
+
+MODIFY 10904/10023
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10023
+
+MODIFY 10904/10025
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10025
+
+MODIFY 10904/10026
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10026
+
+MODIFY 10904/10027
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10027
+
+MODIFY 10904/10028
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10028
+
+MODIFY 10904/10030
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10030
+
+MODIFY 10904/10031
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10031
+
+MODIFY 10904/10032
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10032
+
+MODIFY 10904/10034
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10034
+
+MODIFY 10904/10035
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10035
+
+MODIFY 10904/10037
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10037
+
+MODIFY 10904/10038
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10038
+
+MODIFY 10904/10040
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10040
+
+MODIFY 10904/10041
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10041
+
+MODIFY 10904/10042
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10042
+
+MODIFY 10904/10043
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10043
+
+MODIFY 10904/10044
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10044
+
+MODIFY 10904/10045
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10045
+
+MODIFY 10904/10046
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10046
+
+MODIFY 10904/10047
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10047
+
+MODIFY 10904/10048
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10048
+
+MODIFY 10904/10049
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10049
+
+MODIFY 10904/10050
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10050
+
+MODIFY 10904/10051
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10051
+
+MODIFY 10904/10052
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10052
+
+MODIFY 10904/10053
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10053
+
+MODIFY 10904/10054
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10054
+
+MODIFY 10904/10055
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10055
+
+MODIFY 10904/10056
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10056
+
+MODIFY 10904/10057
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10057
+
+MODIFY 10904/10058
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10058
+
+MODIFY 10904/10064
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10064
+
+MODIFY 10904/10065
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10065
+
+MODIFY 10904/10069
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10069
+
+MODIFY 10904/10070
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10070
+
+MODIFY 10904/10071
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10071
+
+MODIFY 10904/10072
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10072
+
+MODIFY 10904/10075
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10075
+
+MODIFY 10904/10078
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10078
+
+MODIFY 10904/10079
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10079
+
+MODIFY 10904/10080
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10080
+
+MODIFY 10904/10081
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10081
+
+MODIFY 10904/10082
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10082
+
+MODIFY 10904/10083
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10083
+
+MODIFY 10904/10084
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10084
+
+MODIFY 10904/10085
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10085
+
+MODIFY 10904/10086
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10086
+
+MODIFY 10904/10087
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10087
+
+MODIFY 10904/10088
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10088
+
+MODIFY 10904/10089
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10089
+
+MODIFY 10904/10090
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10090
+
+MODIFY 10904/10091
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10091
+
+MODIFY 10904/10092
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10092
+
+MODIFY 10904/10093
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10093
+
+MODIFY 10904/10094
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10094
+
+MODIFY 10904/10095
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10095
+
+MODIFY 10904/10096
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10096
+
+MODIFY 10904/10097
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10097
+
+MODIFY 10904/10101
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10101
+
+MODIFY 10904/10110
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10110
+
+MODIFY 10904/10126
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10126
+
+MODIFY 10904/10143
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10143
+
+MODIFY 10904/10146
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10146
+
+MODIFY 10904/10147
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10147
+
+MODIFY 10904/10150
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10150
+
+MODIFY 10904/10152
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10152
+
+MODIFY 10904/10158
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10158
+
+MODIFY 10904/10168
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10168
+
+MODIFY 10904/10182
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10182
+
+MODIFY 10904/10186
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10186
+
+MODIFY 10904/10187
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10187
+
+MODIFY 10904/10188
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10188
+
+MODIFY 10904/10199
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10199
+
+MODIFY 10904/10200
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10200
+
+MODIFY 10904/10201
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10201
+
+MODIFY 10904/10202
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10202
+
+MODIFY 10904/10212
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10212
+
+MODIFY 10904/10213
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10213
+
+MODIFY 10904/10214
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10214
+
+MODIFY 10904/10215
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10215
+
+MODIFY 10904/10218
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10218
+
+MODIFY 10904/10225
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10225
+
+MODIFY 10904/10227
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10227
+
+MODIFY 10904/10230
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10230
+
+MODIFY 10904/10234
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10234
+
+MODIFY 10904/10236
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10236
+
+MODIFY 10904/10243
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10243
+
+MODIFY 10904/10244
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10244
+
+MODIFY 10904/10257
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10257
+
+MODIFY 10904/10258
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10258
+
+MODIFY 10904/10259
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10259
+
+MODIFY 10904/10261
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10261
+
+MODIFY 10904/10262
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10262
+
+MODIFY 10904/10264
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10264
+
+MODIFY 10904/10265
+1 URL 86400 1110 UTF8 https://dataverse.harvard.edu/citation?persistentId=hdl:10904/10265
+
+MODIFY 10904/242WQX
+1 URL 86400 1110 UTF8 http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/242WQX
+
+MODIFY 10904/4XKD49
+1 URL 86400 1110 UTF8 http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/4XKD49
+
+MODIFY 10904/JIJ0IW
+1 URL 86400 1110 UTF8 http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/JIJ0IW
+
+MODIFY 10904/NEDZUB
+1 URL 86400 1110 UTF8 http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/NEDZUB
+
+MODIFY 10904/QRE5XH
+1 URL 86400 1110 UTF8 http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/QRE5XH
+
+MODIFY 10904/RY57JX
+1 URL 86400 1110 UTF8 http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/RY57JX
+
+MODIFY 10904/SJUA63
+1 URL 86400 1110 UTF8 http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/SJUA63
+
+MODIFY 10904/URNXMK
+1 URL 86400 1110 UTF8 http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/URNXMK

@@ -1,8 +1,8 @@
 #! /bin/bash
 #set -x
 
-HANDLEDIR=/Users/stevenwinship/handle-9.3.2/bin
-PASSPHRASE=Kirkland
+HANDLEDIR=/handle-9.3.2/bin
+PASSPHRASE=
 PREFIX=1902.1
 #PREFIX=10904
 ADMINHANDLE=0.NA/$PREFIX
