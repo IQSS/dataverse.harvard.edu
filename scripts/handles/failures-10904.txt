@@ -1,8 +1,0 @@
-404 10904/242WQX http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/242WQX 
-404 10904/4XKD49 http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/4XKD49 
-404 10904/JIJ0IW http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/JIJ0IW 
-404 10904/NEDZUB http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/NEDZUB 
-404 10904/QRE5XH http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/QRE5XH 
-404 10904/RY57JX http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/RY57JX 
-404 10904/SJUA63 http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/SJUA63 
-404 10904/URNXMK http://dataverse-internal.iq.harvard.edu:8080/citation?persistentId=hdl:10904/URNXMK 
