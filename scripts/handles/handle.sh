@@ -1,14 +1,16 @@
 #! /bin/bash
 #set -x
 
-HANDLEDIR=/handle-9.3.2/bin
-PASSPHRASE=
+HANDLEDIR=/Users/***/handle-9.3.2/bin
+PASSPHRASE=$1
 PREFIX=1902.1
 #PREFIX=10904
 ADMINHANDLE=0.NA/$PREFIX
 LISTFILE=list-$PREFIX.txt
 BATCHFILE=batch-$PREFIX.txt
 FAILURES=failures-$PREFIX.txt
+SUCCESS=success-$PREFIX.txt
+HANDLEURL=https://hdl.handle.net/
 
 ID=X
 URL=X
@@ -18,9 +20,21 @@ function verify-url () {
   http_status=$(curl -s -o /dev/null --write-out "%{http_code}" ${URL//[\'\"]/})
   echo "HTTP Status Code:" $http_status
   if [ "$http_status" -eq 301 ] || [ "$http_status" -eq 302 ] || [ "$http_status" -eq 200 ]; then
-    echo "Request successful."
+    echo "$http_status $ID $URL " >> $SUCCESS
   else
     echo "$http_status $ID $URL " >> $FAILURES
+  fi
+}
+
+function verify-handle-url () {
+  handle_url=$HANDLEURL$ID
+  echo "CURL" $handle_url
+  http_status=$(curl -L -s -o /dev/null --write-out "%{http_code}" ${handle_url//[\'\"]/})
+  echo "HTTP Status Code:" $http_status
+  if [ "$http_status" -eq 301 ] || [ "$http_status" -eq 302 ] || [ "$http_status" -eq 200 ]; then
+    echo "$http_status $ID $handle_url " >> $SUCCESS
+  else
+    echo "$http_status $ID $handle_url " >> $FAILURES
   fi
 }
 
@@ -32,6 +46,7 @@ function get-list () {
 #STEP 2
 function verify-list () {
   rm -f  $FAILURES
+  rm -f  $SUCCESS
   echo "AUTHENTICATE PUBKEY:300:$ADMINHANDLE" > $BATCHFILE
   echo "$HANDLEDIR/admpriv.bin|$PASSPHRASE" >> $BATCHFILE
   while IFS= read -r line; do
@@ -45,6 +60,7 @@ function verify-list () {
       URL=$(echo "$URL" | tr -d '"')
       echo "ID and URL"  $ID $URL
       verify-url
+      verify-handle-url
       echo "" >> $BATCHFILE
       echo "MODIFY $ID" >> $BATCHFILE
       if [[ "$URL" == *"dataset.xhtml"* ]]; then
@@ -79,7 +95,7 @@ else
   verify-list
 fi
 
-# Modify urls that need changing via batch file. Skip if batch file does not exist
+# Modify urls that need changing via batch file. Skip if batch file does NOT exist
 if [ -e "$BATCHFILE" ]; then
   echo "$BATCHFILE exists."
   batch-update
