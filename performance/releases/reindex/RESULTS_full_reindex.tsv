@@ -2,5 +2,4 @@ RELEASE (RC)	DATE	TIME	NUM. DATASETS	NUM. FILES
 6.7-RC	2025-06-01	24:00	211352	4788471
 6.8-RC	2025-09-20	27:30	233406	5097178
 6.8	2025-12-13	28:30	251522	6128083
-6-9-RC	2025-12-14	~32(?)	251522	6128083
-(note: for the 6.9 release, a full reindex of the same exact database was run *twice*, under stock 6.8, then 6.9-RC. the latter was not completed for the last ~3K+ largest datasets as it was interrupted by the database sync. for the bulk of the database that was reindexed, it was visibly slower than under 6.8. the result above is an estimate, and will be updated once the remaining datasets are reindexed today)
+6-9-RC	2025-12-14	37:15	251522	6128083
