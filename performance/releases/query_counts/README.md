@@ -18,3 +18,20 @@ The results should be checked in here. For example, when testing for the 6.8-RC 
 
 (the query counts in the results above turned out to be identical between 6.7.1 and 6.8-RC - ~700 for the dataverse and ~2,000 for the dataset pages above)
 
+For the release 6.9 I have added one more query-counting test:
+
+```
+http://localhost:8080/api/datasets/:persistentId/versions/compareSummary?persistentId=doi:10.7910/DVN/29236
+```
+
+This test is in the dataverse_perf.py Locust script. It is about 10X more expensive, both time- and queries-wise than every other call in that script, and therefore seems important enough to measure separately.
+
+The following 2 files have been added here:
+
+```
+6.9-RC/queries_compareSummary_29236-6.8.txt
+6.9-RC/queries_compareSummary_29236-6.9-RC.txt
+```
+
+The actual counts between the 2 runs are close, but not identical. It may be worth investigating further where the differences came from.
+
