@@ -1,0 +1,16 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	customCIESINSEDAC	CAFE	CIESIN/SEDAC													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	ciesinLargerWorkCitation	Larger Work Citation	TODO: Requires more investigation; may become a compound field.		text	0	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinDistributionLiability	Distribution Liability			text	1	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinPointOfContactAddress	Point of Contact Address	TODO: Investigate User Support mechanism in HDV.		text	2	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinDistributorContactAddress	Distributor Contact Address	TODO: Investigate User Support mechanism in HDV.		text	3	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinCitationEdition	Citation Edition			text	4	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinCitationOnlineLinkage	Citation Online Linkage	TODO: Add URL validation if needed/available.	https://	url	5	<a href="#VALUE" target="_blank">#VALUE</a>	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinGeospatialDataPresentationForm	Geospatial Data Presentation Form			text	6	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinLargerWorkCitationTitle	Larger Work Citation (Title)			text	7	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinPlaceKeywordThesaurus	Place Keyword Thesaurus			text	8	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinAccessConstraints	Access Constraints			text	9	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinDistributorContactEmail	Distributor Contact Electronic Mail Address	TODO: Add email validation if needed/available.		text	10	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinResourceDescription	Resource Description			textbox	11	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
+	ciesinMetadataReferenceInformation	Metadata Reference Information (all)	TODO: Needs clarification on exact sub-elements; placeholder field for now.		textbox	12	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		customCIESINSEDAC	
