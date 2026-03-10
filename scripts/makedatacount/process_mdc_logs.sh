@@ -30,7 +30,7 @@ TMPDIR=/uploads/mdc_proc
 TMPLOGDIR=$TMPDIR/log
 # Report directory shared by counter and dataverse
 RPTDIR=/tmp
-ARCHIVEDIR=s3://dvn-cloud/Admin/logs/payara/counter
+ARCHIVEDIR=s3://dvn-cloud-iqss/Admin/logs/payara/counter
 ListFromArchiveCmd="aws s3 ls ${ARCHIVEDIR}"
 CopyFromArchiveCmd="aws s3 cp ${ARCHIVEDIR}"
 # Must set up:  sudo visudo  and add '%iqss   ALL=(ALL)       NOPASSWD: ALL'
