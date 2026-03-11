@@ -18,15 +18,15 @@ previous_month=$(date -d "$THIS_MONTH_START -1 month" +"%B %Y")
 #previous_month="February 2026"
 echo "$previous_month"
 
-echo "Harvard Educational Program Screening Compliance Report for $previous_month" > $BODY
+echo "Harvard Dataverse Repository monthly screening submission for $previous_month" > $BODY
 
 psql -h $HOST -d $DATABASE -U $USER -c "SELECT useridentifier, email, affiliation FROM authenticateduser WHERE createdtime >= DATE_TRUNC('month', CURRENT_TIMESTAMP) - INTERVAL '1 month' AND createdtime < DATE_TRUNC('month', CURRENT_TIMESTAMP);" > $TEMPFILE
 
-echo "Harvard Educational Program Screening Compliance" > $OUTPUT
+echo "Harvard Dataverse Repository Monthly Screening Submission" > $OUTPUT
 echo "" >> $OUTPUT
 echo $previous_month >> $OUTPUT
 echo "" >> $OUTPUT
 cat  $PWD/temp.csv >> $OUTPUT
-mail -s "Harvard Educational Program Screening Compliance for $previous_month" -a $OUTPUT RCP_exportcontrol@harvard.edu -c steven_winship@iq.harvard.edu < $BODY
+mail -s "Harvard Dataverse Repository monthly screening submission for $previous_month" -a $OUTPUT RCP_exportcontrol@harvard.edu -c steven_winship@iq.harvard.edu < $BODY
 
 
