@@ -1,0 +1,16 @@
+#metadataBlock	name	dataverseAlias	displayName													
+	customCIESIN	CIESIN	CIESIN Metadata Block													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	horizontalCoordinateSystemDefinition	Horizontal Coordinate System Definition	The reference frame or system from which linear or angular quantities are measured and assigned to the position that a point occupies		none	0	;	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE		customCIESIN	
+	latitudeResolution	Latitude Resolution	The minimum difference between two adjacent latitude values expressed in Geographic Coordinate Units of measure		float	1	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	horizontalCoordinateSystemDefinition	customCIESIN	
+	longitudeResolution	Longitude Resolution	The minimum difference between two adjacent longitude values expressed in Geographic Coordinate Units of measure		float	2	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	horizontalCoordinateSystemDefinition	customCIESIN	
+	geographicCoordinateUnits	Geographic Coordinate Units	The unit of measure used for the latitude and longitude values		text	3	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	horizontalCoordinateSystemDefinition	customCIESIN	
+	geodeticModel	Geodetic Model	The parameters for the shape of the earth		none	4	;	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE		customCIESIN	
+	horizontalDatumName	Horizontal Datum Name	The identification given to the reference system used for defining the coordinates of points		text	5	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	geodeticModel	customCIESIN	
+	ellipsoidName	Ellipsoid Name	The identification given to established representations of the Earth's shape		text	6	#NAME: #VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	geodeticModel	customCIESIN	
+	directSpatialReferenceMethod	Direct Spatial Reference Method	The system of objects used to represent space in the Dataset		text	7	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE		customCIESIN	
+	rasterObjectType	Raster Object Type	The raster spatial objects used to locate zero-, two-, or three-dimensional locations in the Dataset		text	8	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE		customCIESIN	
+	rasterObjectRowCount	Raster Object Row Count	The maximum number of raster objects along the ordinate (y) axis		int	9	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE		customCIESIN	
+	rasterObjectColumnCount	Raster Object Column Count	The maximum number of raster objects along the abscissa (x) axis		int	10	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE		customCIESIN	
+	rasterObjectVerticalCount	Raster Object Vertical Count	The maximum number of raster objects along the vertical (z) axis		int	11	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE		customCIESIN	
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												

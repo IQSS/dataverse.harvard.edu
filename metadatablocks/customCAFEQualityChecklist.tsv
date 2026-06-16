@@ -1,0 +1,21 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	customCAFEQualityChecklist	CAFE	Quality Checklist													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	cafeChecklistReadmeIncluded	Review the CAFE Recommended README Template. Are all applicable fields from the template included in this submission description or an attached ReadMe?	Indicate whether the ReadMe has been completed for this deposit. See description above for more information.		text	0	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customCAFEQualityChecklist	
+	cafeChecklistDataDictionaryProvided	Does this submission include a data dictionary describing all variables, units, etc. as applicable?	Indicate whether a data dictionary has been completed for this deposit. See description above for more information.		text	1	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customCAFEQualityChecklist	
+	cafeChecklistSubmissionGuidelines	Review the Extracted Data Collection Submission Guidelines. Have you completed all required fields in line with the submission guidance?	Indicate whether the Guidelines has been followed for this deposit. See description above for more information.		text	2	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customCAFEQualityChecklist	
+	cafeChecklistSupportingArtifacts	Does this submission include a screenshot of the site from which data were downloaded, and any technical documentation and/or data dictionaries that were distributed along with the extracted dataset (as available)?	Indicate whether these critical data extraction components have been included for this deposit. See description above for more information.		text	3	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		customCAFEQualityChecklist	
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	cafeChecklistReadmeIncluded	Yes		0												
+	cafeChecklistReadmeIncluded	No		1												
+	cafeChecklistReadmeIncluded	Pending addition		2												
+	cafeChecklistDataDictionaryProvided	Yes		0												
+	cafeChecklistDataDictionaryProvided	No		1												
+	cafeChecklistDataDictionaryProvided	Pending addition		2												
+	cafeChecklistSubmissionGuidelines	Yes		0												
+	cafeChecklistSubmissionGuidelines	No		1												
+	cafeChecklistSubmissionGuidelines	Pending addition		2												
+	cafeChecklistSupportingArtifacts	Yes		0												
+	cafeChecklistSupportingArtifacts	No		1												
+	cafeChecklistSupportingArtifacts	Not applicable		2												
+	cafeChecklistSupportingArtifacts	Pending addition		3												

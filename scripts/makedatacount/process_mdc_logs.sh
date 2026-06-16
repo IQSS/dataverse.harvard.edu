@@ -30,7 +30,7 @@ TMPDIR=/uploads/mdc_proc
 TMPLOGDIR=$TMPDIR/log
 # Report directory shared by counter and dataverse
 RPTDIR=/tmp
-ARCHIVEDIR=s3://dvn-cloud/Admin/logs/payara/counter
+ARCHIVEDIR=s3://dvn-cloud-iqss/Admin/logs/payara/counter
 ListFromArchiveCmd="aws s3 ls ${ARCHIVEDIR}"
 CopyFromArchiveCmd="aws s3 cp ${ARCHIVEDIR}"
 # Must set up:  sudo visudo  and add '%iqss   ALL=(ALL)       NOPASSWD: ALL'
@@ -41,7 +41,7 @@ upload_to_hub=False
 clean_for_rerun=False
 platform_name="Harvard Dataverse"
 hub_base_url="https://api.datacite.org"
-cache_size=-64000
+cache_size=-1000000
 # If uploading to DataCite make sure the hub_api_token is defined in COUNTERPROCESSORDIR/config/secrets.yaml and not hard coded in this script
 
 # Testing with dataverse running in docker

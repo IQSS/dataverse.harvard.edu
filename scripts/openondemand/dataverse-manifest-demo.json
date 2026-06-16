@@ -1,0 +1,18 @@
+{
+  "displayName": "Explore in Open OnDemand",
+  "description": "Download dataset files into Open OnDemand and publish back to Dataverse",
+  "toolName": "ondemand_loop_dataset_tool",
+  "scope": "dataset",
+  "types": ["explore"],
+  "toolUrl": "https://hmdc.github.io/fasrc-ondemand-loop/dv_external_tools/demo_landing.html",
+  "httpMethod": "GET",
+  "toolParameters": {
+    "queryParameters": [
+      {"dataverse_url": "{siteUrl}"},
+      {"dataset_id": "{datasetPid}"},
+      {"version": "{datasetVersion}"},
+      {"locale": "{localeCode}"},
+      {"env_cannon_prod": "{localeCode}"}
+    ]
+  }
+}
