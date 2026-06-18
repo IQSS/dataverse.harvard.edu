@@ -1,0 +1,14 @@
+#metadataBlock	name	dataverseAlias	displayName
+	rubric_customUNCDataReview		UNC Data Review
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	uncDataReviewAccuracy	Accuracy	Self defined definition by respondents		text	0	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customUNCDataReview
+	uncDataReviewReliability	Reliability	Self defined definition by respondents		text	1	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customUNCDataReview
+	uncDataReviewObjectivity	Objectivity	Self defined definition by respondents		text	2	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customUNCDataReview
+	uncDataReviewReproducibility	Reproducibility	Self defined definition by respondents		text	3	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customUNCDataReview
+	uncDataReviewTransparency	Transparency	Self defined definition by respondents		text	4	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customUNCDataReview
+	uncDataReviewReputationForQuality	Reputation for Quality	Self defined definition by respondents		text	5	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customUNCDataReview
+	uncDataReviewProtectionFromUnauthorizedDisclosure	Protection from Unauthorized Disclosure	Self defined definition by respondents		text	6	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customUNCDataReview
+	uncDataReviewConsent	Consent	Self defined definition by respondents		text	7	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customUNCDataReview
+	uncDataReviewCompliance	Compliance	Self defined definition by respondents		text	8	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customUNCDataReview
+	uncDataReviewRubricSummary	Rubric Summary	Narrative summary of all quality indicators in the rubric		textbox	9	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customUNCDataReview
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder

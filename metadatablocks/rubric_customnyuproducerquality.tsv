@@ -1,0 +1,24 @@
+#metadataBlock	name	dataverseAlias	displayName
+	rubric_customNYUProducerQuality		NYU Producer Quality Review
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	nyuDataReviewAccuracyAverageAggregateScoreLLM	Average Aggregate Score (Expert)			float	0	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewAccuracyAverageAggregateScoreHumanReponse	Average Aggregate Score (Community)			float	1	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewAccuracyStandardDeviationLLM	Standard Deviation (Expert)			float	2	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewAccuracyStandardDeviationHumanResponse	Standard Deviation (Community)			float	3	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewReliabilityAverageAggregateScoreLLM	Average Aggregate Score (Expert)			float	4	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewReliabilityAverageAggregateScoreHumanReponse	Average Aggregate Score (Community)			float	5	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewReliabilityStandardDeviationLLM	Standard Deviation (Expert)			float	6	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewReliabilityStandardDeviationHumanResponse	Standard Deviation (Community)			float	7	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewObjectivityAverageAggregateScoreLLM	Average Aggregate Score (Expert)			float	8	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewObjectivityAverageAggregateScoreHumanReponse	Average Aggregate Score (Community)			float	9	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewObjectivityStandardDeviationLLM	Standard Deviation (Expert)			float	10	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewObjectivityStandardDeviationHumanResponse	Standard Deviation (Community)			float	11	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewReputationForQualityAverageAggregateScoreLLM	Average Aggregate Score (Expert)			float	12	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewReputationForQualityAverageAggregateScoreHumanReponse	Average Aggregate Score (Community)			float	13	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewReputationForQualityStandardDeviationLLM	Standard Deviation (Expert)			float	14	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewReputationForQualityStandardDeviationHumanResponse	Standard Deviation (Community)			float	15	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewDataProtectionAverageAggregateScoreLLM	Average Aggregate Score (Expert)			float	16	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewDataProtectionAverageAggregateScoreHumanReponse	Average Aggregate Score (Community)			float	17	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewDataProtectionStandardDeviationLLM	Standard Deviation (Expert)			float	18	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+	nyuDataReviewDataProtectionStandardDeviationHumanResponse	Standard Deviation (Community)			float	19	#VALUE (out of 5)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		rubric_customNYUProducerQuality
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder
