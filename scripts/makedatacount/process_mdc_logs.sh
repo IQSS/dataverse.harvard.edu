@@ -171,7 +171,7 @@ function process_archived_files () {
   # for the same dates so merging is a must.
   # Get a list of directories under NODE_LOGDIR that are in format NODE_yyyy-mm and strip to get yyyy_mm
   # Sort so newest yyyy-mm is first in the list
-  ls -1d $TMPLOGDIR/* | rev | cut -d'_' -f1 | rev | sort -r | uniq > $TMPDIR/archived_files
+  sudo bash -c "ls -1d $TMPLOGDIR/* | rev | cut -d'_' -f1 | rev | sort -r | uniq > $TMPDIR/archived_files"
   # Read first line and strip off trailing '/' to get the newest year_month to process
   read -r line < $TMPDIR/archived_files
   year_month=${line:(0):7}
